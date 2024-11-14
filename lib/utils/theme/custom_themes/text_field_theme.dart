@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class TTextFieldTheme {
   TTextFieldTheme._();
 
+  // Light Theme For TextField
   static InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
     errorMaxLines: 3,
     prefixIconColor: Colors.grey,
@@ -36,6 +37,7 @@ class TTextFieldTheme {
     ),
   );
 
+  // Dark Theme For Text Field
   static InputDecorationTheme darkInputDecorationTheme = InputDecorationTheme(
     errorMaxLines: 3,
     prefixIconColor: Colors.grey,

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class TOutlinedButtonTheme {
   TOutlinedButtonTheme._();
 
+  // Light Theme For Outline Button
   static final lightOutlineButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
@@ -18,6 +19,7 @@ class TOutlinedButtonTheme {
     ),
   );
 
+  // Dark Theme For Outline Button
   static final darkOutlineButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,

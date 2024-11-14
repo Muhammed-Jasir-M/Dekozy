@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 class TTextTheme {
   TTextTheme._();
 
+  // Light Theme For Text
   static TextTheme lightTextTheme = TextTheme(
+
     headlineLarge: const TextStyle().copyWith(
       fontSize: 32.0,
       fontWeight: FontWeight.bold,
@@ -64,7 +66,9 @@ class TTextTheme {
     ),
   );
 
+  // Dark Theme For Text
   static TextTheme darkTextTheme = TextTheme(
+    
     headlineLarge: const TextStyle().copyWith(
       fontSize: 32.0,
       fontWeight: FontWeight.bold,

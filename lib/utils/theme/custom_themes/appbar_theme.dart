@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class TAppbarTheme {
   TAppbarTheme._();
 
+  // Light Theme For Appbar
   static const lightAppbarTheme = AppBarTheme(
     elevation: 0,
     centerTitle: false,
@@ -18,6 +19,7 @@ class TAppbarTheme {
     ),
   );
 
+  // Dark Theme For Appbar
   static const darkAppbarTheme = AppBarTheme(
     elevation: 0,
     centerTitle: false,
