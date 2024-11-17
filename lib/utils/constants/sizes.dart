@@ -1,5 +1,6 @@
 class TSizes {
-  
+  TSizes._();
+
   // Padding and Margin Sizes
   static const double xs = 4.0;
   static const double sm = 8.0;
