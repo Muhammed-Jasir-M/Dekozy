@@ -2,6 +2,7 @@
 
 class TTexts {
   TTexts._();
+  static const String submit = 'Submit';
 
   // OnBoarding Texts
   static const String onBoardingTitlel = "Choose your product";

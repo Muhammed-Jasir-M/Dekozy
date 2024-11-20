@@ -1,5 +1,6 @@
 import 'package:aurakart/common/styles/spacing_styles.dart';
 import 'package:aurakart/features/authentication/screens/login/widgets/social_buttons.dart';
+import 'package:aurakart/features/authentication/screens/password_configuration/forgot_password.dart';
 import 'package:aurakart/features/authentication/screens/signup/signup.dart';
 import 'package:aurakart/features/authentication/screens/login/widgets/form_divider.dart';
 import 'package:aurakart/utils/constants/colors.dart';
@@ -97,9 +98,9 @@ class LoginScreen extends StatelessWidget {
                             ],
                           ),
 
-                          ///Forget Password
+                          /// Forget Password
                           TextButton(
-                            onPressed: () {},
+                            onPressed: () => Get.to(() => const ForgetPassword()),
                             child: const Text(TTexts.forgetPassword),
                           ),
                         ],
