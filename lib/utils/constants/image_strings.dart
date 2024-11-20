@@ -18,4 +18,9 @@ class TImages {
       "assets/images/on_boarding_images/payment.json";
   static const String onBoardingImage3 =
       "assets/images/on_boarding_images/delivery.json";
+
+  static const String deleiveredEmailIllustration =
+    "assets/images/animations/email_verification.png";
+  static const String signupSuccessIllustration =
+    "assets/images/animations/register_success.png";
 }

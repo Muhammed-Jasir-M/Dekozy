@@ -40,6 +40,7 @@ class TTexts {
   static const String verificationCode = "verificationCode";
   static const String resendEmail = "Resend Email";
   static const String resendEmailIn = "Resend email in";
+  static const String tContinue = "Continue";
 
   // Authentication Headings Text
   static const String loginTitle = "Welcome back,";
@@ -53,7 +54,7 @@ class TTexts {
   static const String changeYourPasswordSubTitle =
       "Your Account Security is Our Priority! We've Sent You a Secure Link to Safely Change Your Password and Keep Your Account Protected.";
   static const String confirmEmail = "Verify your email address!";
-  static const String confirmEmailSunTitle =
+  static const String confirmEmailSubTitle =
       " Congratulations! Your Account Awaits: verity Your Email to Start Shopping and Experience a World of Unrivaled Deals and Personalized Offers.";
   static const String emailNotReceivedMessage =
       "Didn't get the email? Check your junk/span or resend it.";
