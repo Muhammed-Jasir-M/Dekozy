@@ -1,3 +1,4 @@
+import 'package:aurakart/common/widgets/success_screen/success_screen.dart';
 import 'package:aurakart/features/authentication/screens/login/login.dart';
 import 'package:aurakart/utils/constants/image_strings.dart';
 import 'package:aurakart/utils/constants/sizes.dart';
@@ -36,7 +37,9 @@ class VerifyEmailScreen extends StatelessWidget {
                   width: THelperFunctions.screenWidth() * 0.6,
                 ),
 
-                const SizedBox(height: TSizes.spaceBtwSections,),
+                const SizedBox(
+                  height: TSizes.spaceBtwSections,
+                ),
 
                 /// Title & SubTitle
                 Text(
@@ -61,13 +64,20 @@ class VerifyEmailScreen extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
 
-                const SizedBox(height: TSizes.spaceBtwItems),
+                const SizedBox(height: TSizes.spaceBtwSections),
 
                 // Buttons
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () => Get.to(
+                      () => SuccessScreen(
+                        onPressed: () => Get.to(() => const LoginScreen()),
+                        image: TImages.signupSuccessIllustration,
+                        title: TTexts.yourAccountCreatedTitle,
+                        subTitle: TTexts.yourAccountCreatedSubTitle,
+                      ),
+                    ),
                     child: const Text(TTexts.tContinue),
                   ),
                 ),
