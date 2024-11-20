@@ -1,3 +1,4 @@
+import 'package:aurakart/features/authentication/screens/password_configuration/reset_password.dart';
 import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:aurakart/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
@@ -45,13 +46,13 @@ class ForgetPassword extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () => Get.off(() => ()),
+                onPressed: () => Get.off(() => const ResetPassword()),
                 child: const Text(TTexts.submit),
               ),
             ),
           ],
         ),
       ),
-    ); 
+    );
   }
 }

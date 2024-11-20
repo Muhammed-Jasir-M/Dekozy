@@ -3,6 +3,9 @@
 class TTexts {
   TTexts._();
   static const String submit = 'Submit';
+  static const String done = 'Done';
+  static const String skip = 'Skip';
+  static const String appName = 'Aura-Kart';
 
   // OnBoarding Texts
   static const String onBoardingTitlel = "Choose your product";
