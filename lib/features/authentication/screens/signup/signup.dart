@@ -1,5 +1,5 @@
-import 'package:aurakart/features/authentication/screens/login/widgets/form_divider.dart';
-import 'package:aurakart/features/authentication/screens/login/widgets/social_buttons.dart';
+import 'package:aurakart/common/widgets/login_signup/form_divider.dart';
+import 'package:aurakart/common/widgets/login_signup/social_buttons.dart';
 import 'package:aurakart/features/authentication/screens/signup/widgets/signup_form.dart';
 import 'package:aurakart/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
