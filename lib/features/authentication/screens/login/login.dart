@@ -3,6 +3,7 @@ import 'package:aurakart/features/authentication/screens/login/widgets/social_bu
 import 'package:aurakart/features/authentication/screens/password_configuration/forgot_password.dart';
 import 'package:aurakart/features/authentication/screens/signup/signup.dart';
 import 'package:aurakart/features/authentication/screens/login/widgets/form_divider.dart';
+import 'package:aurakart/navigation_menu.dart';
 import 'package:aurakart/utils/constants/colors.dart';
 import 'package:aurakart/utils/constants/image_strings.dart';
 import 'package:aurakart/utils/constants/sizes.dart';
@@ -105,6 +106,7 @@ class LoginScreen extends StatelessWidget {
                           ),
                         ],
                       ),
+
                       const SizedBox(
                         height: TSizes.spaceBtwSections,
                       ),
@@ -113,7 +115,7 @@ class LoginScreen extends StatelessWidget {
                       SizedBox(
                         width: double.infinity,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () => Get.to(() => const NavigationMenu()),
                           child: const Text(TTexts.signIn),
                         ),
                       ),

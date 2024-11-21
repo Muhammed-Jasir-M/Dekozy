@@ -1,5 +1,6 @@
 import 'package:aurakart/features/authentication/screens/onboarding/onboarding.dart';
 import 'package:aurakart/utils/theme/theme.dart';
+import 'package:aurakart/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Aurakart',
+      title: TTexts.appName,
       themeMode: ThemeMode.system,
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
