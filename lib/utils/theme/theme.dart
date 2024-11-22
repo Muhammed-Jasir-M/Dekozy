@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:aurakart/utils/theme/custom_themes/appbar_theme.dart';
 import 'package:aurakart/utils/theme/custom_themes/bottom_sheet_theme.dart';
 import 'package:aurakart/utils/theme/custom_themes/checkbox_theme.dart';
@@ -31,7 +30,7 @@ class TAppTheme {
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
-    brightness: Brightness.light,
+    brightness: Brightness.dark,
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.black,
     textTheme: TTextTheme.darkTextTheme,
