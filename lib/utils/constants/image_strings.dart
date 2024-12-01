@@ -20,13 +20,19 @@ class TImages {
   static const String deleiveredEmailIllustration =
       "assets/images/animations/email_verification.png";
   static const String signupSuccessIllustration =
-      "assets/images/animations/register_success.png";
+    "assets/images/animations/register_success.png";
 
-  //categories Icons
+     //categories Icons
   static const String sportIcon = "assets/icons/categories/sports.png";
   static const String perfumeIcon = "assets/icons/categories/perfume.png";
   static const String sneakersIcon = "assets/icons/categories/sneakers.png";
   static const String tshirtIcon = "assets/icons/categories/tshirt.png";
   static const String tvIcon = "assets/icons/categories/tv.png";
+
+    //Banners 
+    static const String promoBanner1="assets/images/banners/promo-banner-1.png.jpg";
+    static const String promoBanner2="assets/images/banners/promo-banner-2.png.jpg";
+    static const String promoBanner3="assets/images/banners/promo-banner-1.png.jpg";
+
 
 }

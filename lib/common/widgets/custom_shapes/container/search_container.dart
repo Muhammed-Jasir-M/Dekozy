@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:aurakart/main.dart';
 import 'package:aurakart/utils/constants/colors.dart';
 import 'package:aurakart/utils/constants/sizes.dart';
