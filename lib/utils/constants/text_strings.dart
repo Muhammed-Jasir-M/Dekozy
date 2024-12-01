@@ -2,10 +2,13 @@
 
 class TTexts {
   TTexts._();
+
+  // Global Texts
   static const String submit = 'Submit';
   static const String done = 'Done';
   static const String skip = 'Skip';
   static const String appName = 'Aura-Kart';
+  static const String tContinue = "Continue";
 
   // OnBoarding Texts
   static const String onBoardingTitlel = "Choose your product";
@@ -19,7 +22,7 @@ class TTexts {
   static const String onBoardingSubTitle3 =
       "From Our Doorstep to Yours Swift, Secure, and Contactless Delivery!";
 
-  // Home Page
+  // Home 
   static const String homeAppbarTitle = "Good day for shopping";
   static const String homeAppbarSubTitle = "Aurakart";
 
@@ -44,7 +47,6 @@ class TTexts {
   static const String verificationCode = "verificationCode";
   static const String resendEmail = "Resend Email";
   static const String resendEmailIn = "Resend email in";
-  static const String tContinue = "Continue";
 
   // Authentication Headings Text
   static const String loginTitle = "Welcome back,";
@@ -66,4 +68,8 @@ class TTexts {
       "Your account successfully created!";
   static const String yourAccountCreatedSubTitle =
       "Welcome to Your Ultimate Shopping Destination: Your Account is Created, Unleash the Joy of Seamless Online Shopping!";
+
+  // Product
+  static const String popularProducts = "Popular Products";
+
 }

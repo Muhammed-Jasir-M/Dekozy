@@ -1,3 +1,5 @@
+import 'package:aurakart/utils/constants/colors.dart';
+import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class TElevetedButtonTheme {
@@ -7,18 +9,18 @@ class TElevetedButtonTheme {
   static final lightElevetedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.white,
-      backgroundColor: Colors.blue,
-      disabledForegroundColor: Colors.grey,
-      disabledBackgroundColor: Colors.grey,
-      side: const BorderSide(color: Colors.blue),
-      padding: const EdgeInsets.symmetric(vertical: 10),
+      foregroundColor: TColors.light,
+      backgroundColor: TColors.primary,
+      disabledForegroundColor: TColors.darkGrey,
+      disabledBackgroundColor: TColors.buttonDisabled,
+      side: const BorderSide(color: TColors.primary),
+      padding: const EdgeInsets.symmetric(vertical: TSizes.buttonHeight),
       textStyle: const TextStyle(
         fontSize: 16.0,
-        color: Colors.white,
+        color: TColors.textWhite,
         fontWeight: FontWeight.w600,
       ),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.buttonRadius)),
     ),
   );
 
@@ -26,18 +28,18 @@ class TElevetedButtonTheme {
   static final darkElevetedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Colors.white,
-      backgroundColor: Colors.blue,
-      disabledForegroundColor: Colors.grey,
-      disabledBackgroundColor: Colors.grey,
-      side: const BorderSide(color: Colors.blue),
-      padding: const EdgeInsets.symmetric(vertical: 10),
+      foregroundColor: TColors.light,
+      backgroundColor: TColors.primary,
+      disabledForegroundColor: TColors.darkGrey,
+      disabledBackgroundColor: TColors.darkerGrey,
+      side: const BorderSide(color: TColors.primary),
+      padding: const EdgeInsets.symmetric(vertical: TSizes.buttonHeight),
       textStyle: const TextStyle(
         fontSize: 16.0,
-        color: Colors.white,
+        color: TColors.textWhite,
         fontWeight: FontWeight.w600,
       ),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.buttonRadius)),
     ),
   );
 }

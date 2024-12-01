@@ -1,10 +1,10 @@
 import "package:aurakart/common/widgets/appbar/appbar.dart";
-import "package:aurakart/common/widgets/common.widgets.image_text_widgets/vertical_image_text.dart";
 import "package:aurakart/common/widgets/custom_shapes/container/circular_container.dart";
 import "package:aurakart/common/widgets/custom_shapes/container/primary_header_container.dart";
 import "package:aurakart/common/widgets/custom_shapes/container/search_container.dart";
-import "package:aurakart/common/widgets/images/t_rounded_image.dart";
+import "package:aurakart/common/widgets/layouts/grid_layout.dart";
 import "package:aurakart/common/widgets/products/cart/cart_menu_icon.dart";
+import "package:aurakart/common/widgets/products/product-cards/product_card_veritcal.dart";
 import "package:aurakart/common/widgets/texts/section_heading.dart";
 import "package:aurakart/features/shop/screens/home/widgets/home_appbar.dart";
 import "package:aurakart/features/shop/screens/home/widgets/home_categories.dart";
@@ -40,18 +40,21 @@ class HomeScreen extends StatelessWidget {
                   TSearchContainer(text: 'search in store'),
                   SizedBox(height: TSizes.spaceBtwSections),
 
-                  /// Categories
+                  /// Categories Section
                   Padding(
                     padding: EdgeInsets.only(left: TSizes.defaultSpace),
                     child: Column(
                       children: [
-                        ///hheading
+                        /// Heading
                         TSectionHeading(
-                            title: 'popular Categories',
-                            showActionbutton: false,
-                            textColor: Colors.white),
+                          title: 'Popular Categories',
+                          showActionbutton: false,
+                          textColor: TColors.white,
+                        ),
+
                         SizedBox(height: TSizes.spaceBtwItems),
-                        ////categories
+
+                        /// Categories
                         THomeCategories(),
                       ],
                     ),
@@ -61,16 +64,32 @@ class HomeScreen extends StatelessWidget {
             ),
 
             /// Body
-
             Padding(
               padding: const EdgeInsets.all(TSizes.defaultSpace),
-              child: TPromoSlider(banners: [TImages.promoBanner1,TImages.promoBanner2,TImages.promoBanner1],), // Column
-            ) // Padding
+              child: Column(
+                children: [
+                  // Banners
+                  const TPromoSlider(
+                    banners: [
+                      TImages.promoBanner1,
+                      TImages.promoBanner2,
+                      TImages.promoBanner3,
+                    ],
+                  ),
+
+                  const SizedBox(height: TSizes.spaceBtwSections),
+
+                  /// Popular Products
+                  TGridLayout(
+                    itemCount: 4,
+                    itemBuilder: (_, index) => const TProductCardVertical(),
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
     );
   }
 }
-
-

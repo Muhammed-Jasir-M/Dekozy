@@ -1,9 +1,6 @@
-import 'package:aurakart/common/widgets/common.widgets.image_text_widgets/vertical_image_text.dart';
+import 'package:aurakart/common/widgets/image_text_widgets/vertical_image_text.dart';
 import 'package:aurakart/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
-
-
-
 
 class THomeCategories extends StatelessWidget {
   const THomeCategories({
@@ -15,17 +12,17 @@ class THomeCategories extends StatelessWidget {
     return SizedBox(
       height: 80,
       child: ListView.builder(
-          shrinkWrap: true,
-          itemCount: 6,
-          scrollDirection: Axis.horizontal,
-          itemBuilder: (_, index) {
-            return  TVerticalImageText(
-              image: TImages.sportIcon,
-              title: 'Shoes',
-              onTap: (){},
-            );
-          }),
+        shrinkWrap: true,
+        itemCount: 6,
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (_, index) {
+          return TVerticalImageText(
+            image: TImages.sportIcon,
+            title: 'Shoes',
+            onTap: () {},
+          );
+        },
+      ),
     );
   }
 }
-

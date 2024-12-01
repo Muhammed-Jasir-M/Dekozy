@@ -31,3 +31,20 @@ class TLocalStorage {
     await _storage.erase();
   }
 }
+
+/// *** *** *** *** *** Example *** *** *** *** *** ///
+
+// LocalStorage localStorage = LocalStorage();
+
+// Save data
+// localStorage.saveData('username', 'JohnDoe');
+
+// Read data
+// String? username = localStorage.readData<String>('username');
+// print('Username: $username'); // Output: Username: JohnDoe
+
+// Remove data
+// localStorage.removeData('username');
+
+// // Clear all data
+// localStorage.clearAll();

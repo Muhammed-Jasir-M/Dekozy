@@ -1,3 +1,5 @@
+import 'package:aurakart/utils/constants/colors.dart';
+import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class TAppbarTheme {
@@ -10,11 +12,11 @@ class TAppbarTheme {
     scrolledUnderElevation: 0,
     backgroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
-    iconTheme: IconThemeData(color: Colors.black, size: 24),
-    actionsIconTheme: IconThemeData(color: Colors.black, size: 24),
+    iconTheme: IconThemeData(color: TColors.black, size: TSizes.iconMd),
+    actionsIconTheme: IconThemeData(color: TColors.black, size: TSizes.iconMd),
     titleTextStyle: TextStyle(
       fontSize: 18.0,
-      color: Colors.black,
+      color: TColors.black,
       fontWeight: FontWeight.w600,
     ),
   );
@@ -26,11 +28,11 @@ class TAppbarTheme {
     scrolledUnderElevation: 0,
     backgroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
-    iconTheme: IconThemeData(color: Colors.black, size: 24),
-    actionsIconTheme: IconThemeData(color: Colors.black, size: 24),
+    iconTheme: IconThemeData(color: TColors.black, size: TSizes.iconMd),
+    actionsIconTheme: IconThemeData(color: TColors.white, size: TSizes.iconMd),
     titleTextStyle: TextStyle(
       fontSize: 18.0,
-      color: Colors.black,
+      color: TColors.white,
       fontWeight: FontWeight.w600,
     ),
   );

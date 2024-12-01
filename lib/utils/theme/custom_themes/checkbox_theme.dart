@@ -1,3 +1,5 @@
+import 'package:aurakart/utils/constants/colors.dart';
+import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class TCheckboxTheme {
@@ -5,17 +7,17 @@ class TCheckboxTheme {
 
   // Light Theme For Checkbox
   static CheckboxThemeData lightCheckboxTheme = CheckboxThemeData(
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.xs)),
     checkColor: WidgetStateProperty.resolveWith((states) {
       if (states.contains(WidgetState.selected)) {
-        return Colors.white;
+        return TColors.white;
       } else {
-        return Colors.black;
+        return TColors.black;
       }
     }),
     fillColor: WidgetStateProperty.resolveWith((states) {
       if (states.contains(WidgetState.selected)) {
-        return Colors.blue;
+        return TColors.primary;
       } else {
         return Colors.transparent;
       }
@@ -24,17 +26,17 @@ class TCheckboxTheme {
 
   // Dark Theme For Checkbox
   static CheckboxThemeData darkCheckboxTheme = CheckboxThemeData(
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.xs)),
     checkColor: WidgetStateProperty.resolveWith((states) {
       if (states.contains(WidgetState.selected)) {
-        return Colors.white;
+        return TColors.white;
       } else {
-        return Colors.black;
+        return TColors.black;
       }
     }),
     fillColor: WidgetStateProperty.resolveWith((states) {
       if (states.contains(WidgetState.selected)) {
-        return Colors.blue;
+        return TColors.primary;
       } else {
         return Colors.transparent;
       }
