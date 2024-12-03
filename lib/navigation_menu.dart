@@ -1,3 +1,4 @@
+import 'package:aurakart/features/personalization/screens/settings/setting.dart';
 import 'package:aurakart/features/shop/screens/home/home.dart';
 import 'package:aurakart/features/shop/screens/store/store.dart';
 import 'package:aurakart/features/shop/screens/wishlist/wishlist.dart';
@@ -62,8 +63,6 @@ class NavigationController extends GetxController {
     const HomeScreen(),
     const StoreScreen(),
     const FavouriteScreen(),
-    Container(
-      color: Colors.blue,
-    ),
+    const SettingsScreen(),
   ];
 }

@@ -23,6 +23,9 @@ class TImages {
   static const String signupSuccessIllustration =
       "assets/images/animations/register_success.png";
 
+  // Profile
+  static const String user = "assets/images/profile/user.png";
+
   // Category Icons
   static const String sportIcon = "assets/icons/categories/sports.png";
   static const String perfumeIcon = "assets/icons/categories/perfume.png";

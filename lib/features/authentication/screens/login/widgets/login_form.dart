@@ -1,4 +1,3 @@
-
 import 'package:aurakart/features/authentication/screens/password_configuration/forgot_password.dart';
 import 'package:aurakart/features/authentication/screens/signup/signup.dart';
 import 'package:aurakart/navigation_menu.dart';
@@ -69,9 +68,7 @@ class TLoginForm extends StatelessWidget {
               ],
             ),
 
-            const SizedBox(
-              height: TSizes.spaceBtwSections,
-            ),
+            const SizedBox(height: TSizes.spaceBtwSections),
 
             /// Sign In Button
             SizedBox(
@@ -82,9 +79,7 @@ class TLoginForm extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(
-              height: TSizes.spaceBtwSections,
-            ),
+            const SizedBox(height: TSizes.spaceBtwSections),
 
             /// Create Account Button
             SizedBox(
@@ -96,9 +91,7 @@ class TLoginForm extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(
-              height: TSizes.spaceBtwSections,
-            ),
+            const SizedBox(height: TSizes.spaceBtwSections),
           ],
         ),
       ),

@@ -29,20 +29,20 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             /// Header
-            TPrimaryHeaderContainer(
+            const TPrimaryHeaderContainer(
               child: Column(
                 children: [
                   /// Appbar
-                  const THomeAppbar(),
-                  const SizedBox(height: TSizes.spaceBtwSections),
+                  THomeAppbar(),
+                  SizedBox(height: TSizes.spaceBtwSections),
 
                   /// Search bar
-                  const TSearchContainer(text: 'search in store'),
-                  const SizedBox(height: TSizes.spaceBtwSections),
+                  TSearchContainer(text: 'search in store'),
+                  SizedBox(height: TSizes.spaceBtwSections),
 
                   /// Category Section
                   Padding(
-                    padding: const EdgeInsets.only(left: TSizes.defaultSpace),
+                    padding: EdgeInsets.only(left: TSizes.defaultSpace),
                     child: Column(
                       children: [
                         /// Heading
@@ -52,13 +52,14 @@ class HomeScreen extends StatelessWidget {
                           textColor: TColors.white,
                         ),
 
-                        const SizedBox(height: TSizes.spaceBtwItems),
+                        SizedBox(height: TSizes.spaceBtwItems),
 
                         /// Categories
-                        const THomeCategories(),
+                        THomeCategories(),
                       ],
                     ),
-                  )
+                  ),
+                  SizedBox(height: TSizes.spaceBtwSections),
                 ],
               ),
             ),
@@ -89,7 +90,7 @@ class HomeScreen extends StatelessWidget {
 
                   /// Popular Products
                   TGridLayout(
-                    itemCount: 2,
+                    itemCount: 4,
                     itemBuilder: (_, index) => const TProductCardVertical(),
                   ),
                 ],

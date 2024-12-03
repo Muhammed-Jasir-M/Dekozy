@@ -64,6 +64,7 @@ flutter:
     - assets/images/on_boarding_animations/
     - assets/images/animations/
     - assets/images/products/
+    - assets/images/profile/
 
   
 # --------------- LOCAL FONTS ------------------ #
