@@ -3,10 +3,12 @@ import 'package:aurakart/common/widgets/custom_shapes/container/primary_header_c
 import 'package:aurakart/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:aurakart/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:aurakart/common/widgets/texts/section_heading.dart';
+import 'package:aurakart/features/personalization/screens/profile/profile.dart';
 import 'package:aurakart/utils/constants/colors.dart';
 import 'package:aurakart/utils/constants/image_strings.dart';
 import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -36,7 +38,7 @@ class SettingsScreen extends StatelessWidget {
                   const SizedBox(height: TSizes.spaceBtwSections),
 
                   /// User Profile Card
-                  const TUserProfileTile(),
+                  TUserProfileTile(onPressed: () => Get.to(() => const ProfileScreen())),
 
                   const SizedBox(height: TSizes.spaceBtwSections),
                 ],
@@ -105,7 +107,6 @@ class SettingsScreen extends StatelessWidget {
                   const SizedBox(height: TSizes.spaceBtwSections),
 
                   /// App Settings
-
                   const TSectionHeading(
                     title: "App Settings",
                     showActionbutton: false,

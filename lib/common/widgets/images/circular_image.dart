@@ -31,9 +31,10 @@ class TCircularImage extends StatelessWidget {
       height: 56,
       padding: const EdgeInsets.all(TSizes.sm),
       decoration: BoxDecoration(
-        color: THelperFunctions.isDarkMode(context)
-            ? TColors.black
-            : TColors.white,
+        color: backgroundColor ??
+            (THelperFunctions.isDarkMode(context)
+                ? TColors.black
+                : TColors.white),
         borderRadius: BorderRadius.circular(100),
       ),
       child: Center(
