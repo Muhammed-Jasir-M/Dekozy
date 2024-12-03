@@ -30,7 +30,10 @@ class TSectionHeading extends StatelessWidget {
           overflow: TextOverflow.ellipsis,
         ),
         if (showActionbutton)
-          TextButton(onPressed: () {}, child: Text(buttontitle))
+          TextButton(
+            onPressed: () {},
+            child: Text(buttontitle),
+          ),
       ],
     );
   }

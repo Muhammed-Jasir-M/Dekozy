@@ -29,20 +29,20 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             /// Header
-            const TPrimaryHeaderContainer(
+            TPrimaryHeaderContainer(
               child: Column(
                 children: [
                   /// Appbar
-                  THomeAppbar(),
-                  SizedBox(height: TSizes.spaceBtwSections),
+                  const THomeAppbar(),
+                  const SizedBox(height: TSizes.spaceBtwSections),
 
                   /// Search bar
-                  TSearchContainer(text: 'search in store'),
-                  SizedBox(height: TSizes.spaceBtwSections),
+                  const TSearchContainer(text: 'search in store'),
+                  const SizedBox(height: TSizes.spaceBtwSections),
 
                   /// Category Section
                   Padding(
-                    padding: EdgeInsets.only(left: TSizes.defaultSpace),
+                    padding: const EdgeInsets.only(left: TSizes.defaultSpace),
                     child: Column(
                       children: [
                         /// Heading
@@ -52,10 +52,10 @@ class HomeScreen extends StatelessWidget {
                           textColor: TColors.white,
                         ),
 
-                        SizedBox(height: TSizes.spaceBtwItems),
+                        const SizedBox(height: TSizes.spaceBtwItems),
 
                         /// Categories
-                        THomeCategories(),
+                        const THomeCategories(),
                       ],
                     ),
                   )
@@ -81,7 +81,7 @@ class HomeScreen extends StatelessWidget {
 
                   /// Heading
                   TSectionHeading(
-                    title: 'popular Products',
+                    title: 'Popular Products',
                     onPressed: () {},
                   ),
 
@@ -89,8 +89,9 @@ class HomeScreen extends StatelessWidget {
 
                   /// Popular Products
                   TGridLayout(
-                      itemCount: 2,
-                      itemBuilder: (_, index) => const TProductCardVertical()),
+                    itemCount: 2,
+                    itemBuilder: (_, index) => const TProductCardVertical(),
+                  ),
                 ],
               ),
             )
