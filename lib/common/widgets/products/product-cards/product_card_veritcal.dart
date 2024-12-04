@@ -21,7 +21,7 @@ class TProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return GestureDetector(
-      onTap: () => Get.to(() =>const ProductDetailScreen()),
+      onTap: () => Get.to(() => const ProductDetailScreen()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
@@ -90,9 +90,7 @@ class TProductCardVertical extends StatelessWidget {
                     title: 'Green Nike Shoe',
                     smallSize: true,
                   ),
-
                   SizedBox(height: TSizes.spaceBtwItems / 2),
-
                   TBrandTitleWithVerifiedIcon(title: "Nike"),
                 ],
               ),

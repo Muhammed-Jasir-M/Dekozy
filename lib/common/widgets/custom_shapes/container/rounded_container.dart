@@ -1,3 +1,4 @@
+import 'package:aurakart/common/widgets/texts/section_heading.dart';
 import 'package:aurakart/utils/constants/colors.dart';
 import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';

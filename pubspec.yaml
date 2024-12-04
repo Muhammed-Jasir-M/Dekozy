@@ -27,6 +27,7 @@ dependencies:
 
   # Product Specific
   carousel_slider: ^5.0.0
+  readmore: ^3.0.0
   
   # Icons
   iconsax: ^0.0.8
