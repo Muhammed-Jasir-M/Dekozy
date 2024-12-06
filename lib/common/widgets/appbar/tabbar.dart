@@ -3,8 +3,8 @@ import 'package:aurakart/utils/device/device_utility.dart';
 import 'package:aurakart/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
-class TTabBar extends StatelessWidget implements PreferredSizeWidget {
-  const TTabBar({
+class ATabBar extends StatelessWidget implements PreferredSizeWidget {
+  const ATabBar({
     super.key,
     required this.tabs,
   });
@@ -13,20 +13,20 @@ class TTabBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
+    final dark = AHelperFunctions.isDarkMode(context);
 
     return Material(
-      color: dark ? TColors.black : TColors.white,
+      color: dark ? AColors.black : AColors.white,
       child: TabBar(
         isScrollable: true,
-        indicatorColor: TColors.primary,
-        labelColor: dark ? TColors.white : TColors.primary,
-        unselectedLabelColor: TColors.darkGrey,
+        indicatorColor: AColors.primary,
+        labelColor: dark ? AColors.white : AColors.primary,
+        unselectedLabelColor: AColors.darkGrey,
         tabs: tabs,
       ),
     );
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(TDeviceUtils.getAppBarHeight());
+  Size get preferredSize => Size.fromHeight(ADeviceUtils.getAppBarHeight());
 }

@@ -4,12 +4,12 @@ import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:aurakart/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
-class TVerticalImageText extends StatelessWidget {
-  const TVerticalImageText({
+class AVerticalImageText extends StatelessWidget {
+  const AVerticalImageText({
     super.key,
     required this.image,
     required this.title,
-    this.textColor = TColors.white,
+    this.textColor = AColors.white,
     this.backgroundColor,
     this.onTap,
   });
@@ -21,33 +21,32 @@ class TVerticalImageText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
+    final dark = AHelperFunctions.isDarkMode(context);
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.only(right: TSizes.spaceBtwItems),
+        padding: const EdgeInsets.only(right: ASizes.spaceBtwItems),
         child: Column(
           children: [
             /// Circular icon
             Container(
               width: 56,
               height: 56,
-              padding: const EdgeInsets.all(TSizes.sm),
+              padding: const EdgeInsets.all(ASizes.sm),
               decoration: BoxDecoration(
-                color:
-                    backgroundColor ?? (dark ? TColors.black : TColors.white),
+                color: backgroundColor ?? (dark ? Colors.black : AColors.white),
                 borderRadius: BorderRadius.circular(100),
               ),
               child: Center(
                 child: Image(
-                  image: const AssetImage(TImages.sportIcon),
+                  image: const AssetImage(AImages.sportIcon),
                   fit: BoxFit.cover,
-                  color: dark ? TColors.light : TColors.dark,
+                  color: dark ? AColors.light : AColors.dark,
                 ),
               ),
             ),
 
-            const SizedBox(height: TSizes.spaceBtwItems / 2),
+            const SizedBox(height: ASizes.spaceBtwItems / 2),
 
             /// Text
             SizedBox(
@@ -57,7 +56,7 @@ class TVerticalImageText extends StatelessWidget {
                 style: Theme.of(context)
                     .textTheme
                     .labelMedium!
-                    .apply(color: TColors.white),
+                    .apply(color: AColors.white),
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
               ),

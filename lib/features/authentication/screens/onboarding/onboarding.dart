@@ -24,19 +24,19 @@ class OnBoardingScreen extends StatelessWidget {
             onPageChanged: controller.updatePageIndicator,
             children: const [
               OnBoardingPage(
-                image: TImages.onBoardingImage1,
-                title: TTexts.onBoardingTitlel,
-                subTitle: TTexts.onBoardingSubTitle1,
+                image: AImages.onBoardingImage1,
+                title: ATexts.onBoardingTitlel,
+                subTitle: ATexts.onBoardingSubTitle1,
               ),
               OnBoardingPage(
-                image: TImages.onBoardingImage2,
-                title: TTexts.onBoardingTitle2,
-                subTitle: TTexts.onBoardingSubTitle2,
+                image: AImages.onBoardingImage2,
+                title: ATexts.onBoardingTitle2,
+                subTitle: ATexts.onBoardingSubTitle2,
               ),
               OnBoardingPage(
-                image: TImages.onBoardingImage3,
-                title: TTexts.onBoardingTitle3,
-                subTitle: TTexts.onBoardingSubTitle3,
+                image: AImages.onBoardingImage3,
+                title: ATexts.onBoardingTitle3,
+                subTitle: ATexts.onBoardingSubTitle3,
               ),
             ],
           ),
@@ -54,4 +54,3 @@ class OnBoardingScreen extends StatelessWidget {
     );
   }
 }
-

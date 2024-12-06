@@ -21,128 +21,129 @@ class SettingsScreen extends StatelessWidget {
         child: Column(
           children: [
             /// Header
-            TPrimaryHeaderContainer(
+            APrimaryHeaderContainer(
               child: Column(
                 children: [
                   /// Appbar
-                  TAppBar(
+                  AAppBar(
                     title: Text(
                       "Account",
                       style: Theme.of(context)
                           .textTheme
                           .headlineMedium!
-                          .apply(color: TColors.white),
+                          .apply(color: AColors.white),
                     ),
                   ),
 
-                  const SizedBox(height: TSizes.spaceBtwSections),
+                  const SizedBox(height: ASizes.spaceBtwSections),
 
                   /// User Profile Card
-                  TUserProfileTile(onPressed: () => Get.to(() => const ProfileScreen())),
+                  AUserProfileTile(
+                      onPressed: () => Get.to(() => const ProfileScreen())),
 
-                  const SizedBox(height: TSizes.spaceBtwSections),
+                  const SizedBox(height: ASizes.spaceBtwSections),
                 ],
               ),
             ),
 
             /// Body
             Padding(
-              padding: const EdgeInsets.all(TSizes.defaultSpace),
+              padding: const EdgeInsets.all(ASizes.defaultSpace),
               child: Column(
                 children: [
                   /// Account Settings
-                  const TSectionHeading(title: 'Account Settings'),
+                  const ASectionHeading(title: 'Account Settings'),
 
-                  const SizedBox(height: TSizes.spaceBtwItems),
+                  const SizedBox(height: ASizes.spaceBtwItems),
 
-                  TSettingsMenuTile(
+                  ASettingsMenuTile(
                     icon: Iconsax.safe_home,
                     title: 'My Addresses',
                     subtitle: "Set shopping delivery address",
                     onTap: () {},
                   ),
 
-                  TSettingsMenuTile(
+                  ASettingsMenuTile(
                     icon: Iconsax.shopping_cart,
                     title: 'My Cart',
                     subtitle: "Add, remove products and move to checkout",
                     onTap: () {},
                   ),
 
-                  TSettingsMenuTile(
+                  ASettingsMenuTile(
                     icon: Iconsax.bag_tick,
                     title: 'My Orders',
                     subtitle: "In-progress and Completed Orders",
                     onTap: () {},
                   ),
 
-                  TSettingsMenuTile(
+                  ASettingsMenuTile(
                     icon: Iconsax.bank,
                     title: 'Bank Account',
                     subtitle: "Withdraw balance to registered bank account",
                     onTap: () {},
                   ),
 
-                  TSettingsMenuTile(
+                  ASettingsMenuTile(
                     icon: Iconsax.discount_shape,
                     title: 'My Coupons',
                     subtitle: "List of all the discounted coupons",
                     onTap: () {},
                   ),
 
-                  TSettingsMenuTile(
+                  ASettingsMenuTile(
                     icon: Iconsax.notification,
                     title: 'Notifications',
                     subtitle: "Set any kind of notification message",
                     onTap: () {},
                   ),
 
-                  TSettingsMenuTile(
+                  ASettingsMenuTile(
                     icon: Iconsax.security_card,
                     title: 'Account Privacy',
                     subtitle: "Mange data usage and Connected accounts",
                     onTap: () {},
                   ),
 
-                  const SizedBox(height: TSizes.spaceBtwSections),
+                  const SizedBox(height: ASizes.spaceBtwSections),
 
                   /// App Settings
-                  const TSectionHeading(
+                  const ASectionHeading(
                     title: "App Settings",
                     showActionbutton: false,
                   ),
 
-                  const SizedBox(height: TSizes.spaceBtwItems),
+                  const SizedBox(height: ASizes.spaceBtwItems),
 
-                  TSettingsMenuTile(
+                  ASettingsMenuTile(
                     icon: Iconsax.document_upload,
                     title: "Load Data",
                     subtitle: "Upload data to your Cloud Firestore",
                     onTap: () {},
                   ),
 
-                  TSettingsMenuTile(
+                  ASettingsMenuTile(
                     icon: Iconsax.location,
                     title: "Geolocation",
                     subtitle: "Set recommendation based on location",
                     trailing: Switch(value: true, onChanged: (value) {}),
                   ),
 
-                  TSettingsMenuTile(
+                  ASettingsMenuTile(
                     icon: Iconsax.security_user,
                     title: "Safe Mode",
                     subtitle: "Search result is safe for all ages",
                     trailing: Switch(value: false, onChanged: (value) {}),
                   ),
 
-                  TSettingsMenuTile(
+                  ASettingsMenuTile(
                     icon: Iconsax.image,
                     title: "HD Image Quality",
                     subtitle: "Set image quality to be seen",
                     trailing: Switch(value: false, onChanged: (value) {}),
                   ),
 
-                  const SizedBox(height: TSizes.spaceBtwSections),
+                  const SizedBox(height: ASizes.spaceBtwSections),
 
                   // Logout Button
                   SizedBox(
@@ -151,7 +152,7 @@ class SettingsScreen extends StatelessWidget {
                         onPressed: () {}, child: const Text('Logout')),
                   ),
 
-                  const SizedBox(height: TSizes.spaceBtwSections),
+                  const SizedBox(height: ASizes.spaceBtwSections),
                 ],
               ),
             )

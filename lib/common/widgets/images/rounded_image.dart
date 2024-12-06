@@ -2,8 +2,8 @@ import 'package:aurakart/utils/constants/colors.dart';
 import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
-class TRoundedImage extends StatelessWidget {
-  const TRoundedImage({
+class ARoundedImage extends StatelessWidget {
+  const ARoundedImage({
     super.key,
     required this.imageUrl,
     this.border,
@@ -15,7 +15,7 @@ class TRoundedImage extends StatelessWidget {
     this.fit = BoxFit.contain,
     this.backgroundColor,
     this.isNetworkImage = false,
-    this.borderRadius = TSizes.md,
+    this.borderRadius = ASizes.md,
   });
 
   final String imageUrl;

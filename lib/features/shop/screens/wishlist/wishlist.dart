@@ -14,13 +14,13 @@ class FavouriteScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: TAppBar(
+      appBar: AAppBar(
         title: Text(
           'Wishlist',
           style: Theme.of(context).textTheme.headlineMedium,
         ),
         actions: [
-          TCircularIcon(
+          ACircularIcon(
             icon: Iconsax.add,
             onPressed: () => Get.to(const HomeScreen()),
           ),
@@ -28,12 +28,12 @@ class FavouriteScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(ASizes.defaultSpace),
           child: Column(
             children: [
-              TGridLayout(
+              AGridLayout(
                 itemCount: 4,
-                itemBuilder: (_, index) => const TProductCardVertical(),
+                itemBuilder: (_, index) => const AProductCardVertical(),
               ),
             ],
           ),

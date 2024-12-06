@@ -4,12 +4,12 @@ import 'package:aurakart/utils/constants/text_strings.dart';
 import 'package:aurakart/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
-class TTermsConditonCheckbox extends StatelessWidget {
-  const TTermsConditonCheckbox({super.key});
+class ATermsConditonCheckbox extends StatelessWidget {
+  const ATermsConditonCheckbox({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
+    final dark = AHelperFunctions.isDarkMode(context);
 
     return Row(
       children: [
@@ -21,35 +21,34 @@ class TTermsConditonCheckbox extends StatelessWidget {
             onChanged: (value) {},
           ),
         ),
-
-        const SizedBox(width: TSizes.spaceBtwItems),
-
+        const SizedBox(width: ASizes.spaceBtwItems),
         Expanded(
           child: Text.rich(
             TextSpan(
               children: [
                 TextSpan(
-                  text: TTexts.isAgreeTo,
+                  text: ATexts.isAgreeTo,
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 TextSpan(
-                  text: TTexts.privacyPolicy,
+                  text: ATexts.privacyPolicy,
                   style: Theme.of(context).textTheme.bodyMedium!.apply(
-                        color: dark ? TColors.white : TColors.primary,
+                        color: dark ? AColors.white : AColors.primary,
                         decoration: TextDecoration.underline,
-                        decorationColor: dark ? TColors.white : TColors.primary,
+                        decorationColor: dark ? AColors.white : AColors.primary,
                       ),
                 ),
                 TextSpan(
-                  text: TTexts.and,
+                  text: ATexts.and,
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 TextSpan(
-                    text: TTexts.termsOfUse,
-                    style: Theme.of(context).textTheme.bodyMedium!.apply(
-                        color: dark ? TColors.white : TColors.primary,
-                        decoration: TextDecoration.underline,
-                        decorationColor: dark ? TColors.white : TColors.primary),),
+                  text: ATexts.termsOfUse,
+                  style: Theme.of(context).textTheme.bodyMedium!.apply(
+                      color: dark ? AColors.white : AColors.primary,
+                      decoration: TextDecoration.underline,
+                      decorationColor: dark ? AColors.white : AColors.primary),
+                ),
               ],
             ),
           ),

@@ -2,8 +2,8 @@ import 'package:aurakart/common/widgets/image_text_widgets/vertical_image_text.d
 import 'package:aurakart/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
 
-class THomeCategories extends StatelessWidget {
-  const THomeCategories({
+class AHomeCategories extends StatelessWidget {
+  const AHomeCategories({
     super.key,
   });
 
@@ -16,8 +16,8 @@ class THomeCategories extends StatelessWidget {
         itemCount: 6,
         scrollDirection: Axis.horizontal,
         itemBuilder: (_, index) {
-          return TVerticalImageText(
-            image: TImages.sportIcon,
+          return AVerticalImageText(
+            image: AImages.sportIcon,
             title: 'Shoes',
             onTap: () {},
           );

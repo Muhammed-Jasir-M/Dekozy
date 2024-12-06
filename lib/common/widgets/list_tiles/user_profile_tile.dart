@@ -4,8 +4,8 @@ import 'package:aurakart/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-class TUserProfileTile extends StatelessWidget {
-  const TUserProfileTile({
+class AUserProfileTile extends StatelessWidget {
+  const AUserProfileTile({
     super.key,
     required this.onPressed,
   });
@@ -15,8 +15,8 @@ class TUserProfileTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: const TCircularImage(
-        image: TImages.user,
+      leading: const ACircularImage(
+        image: AImages.user,
         width: 50,
         height: 50,
         padding: 0,
@@ -26,16 +26,16 @@ class TUserProfileTile extends StatelessWidget {
         style: Theme.of(context)
             .textTheme
             .headlineSmall!
-            .apply(color: TColors.white),
+            .apply(color: AColors.white),
       ),
       subtitle: Text(
         'support@aurakart.com',
         style:
-            Theme.of(context).textTheme.bodyMedium!.apply(color: TColors.white),
+            Theme.of(context).textTheme.bodyMedium!.apply(color: AColors.white),
       ),
       trailing: IconButton(
         onPressed: onPressed,
-        icon: const Icon(Iconsax.edit, color: TColors.white),
+        icon: const Icon(Iconsax.edit, color: AColors.white),
       ),
     );
   }

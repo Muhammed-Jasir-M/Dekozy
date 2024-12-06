@@ -29,69 +29,69 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             /// Header
-            const TPrimaryHeaderContainer(
+            const APrimaryHeaderContainer(
               child: Column(
                 children: [
                   /// Appbar
-                  THomeAppbar(),
-                  SizedBox(height: TSizes.spaceBtwSections),
+                  AHomeAppbar(),
+                  SizedBox(height: ASizes.spaceBtwSections),
 
                   /// Search bar
-                  TSearchContainer(text: 'search in store'),
-                  SizedBox(height: TSizes.spaceBtwSections),
+                  ASearchContainer(text: 'search in store'),
+                  SizedBox(height: ASizes.spaceBtwSections),
 
                   /// Category Section
                   Padding(
-                    padding: EdgeInsets.only(left: TSizes.defaultSpace),
+                    padding: EdgeInsets.only(left: ASizes.defaultSpace),
                     child: Column(
                       children: [
                         /// Heading
-                        TSectionHeading(
+                        ASectionHeading(
                           title: 'Popular Categories',
                           showActionbutton: false,
-                          textColor: TColors.white,
+                          textColor: AColors.white,
                         ),
 
-                        SizedBox(height: TSizes.spaceBtwItems),
+                        SizedBox(height: ASizes.spaceBtwItems),
 
                         /// Categories
-                        THomeCategories(),
+                        AHomeCategories(),
                       ],
                     ),
                   ),
-                  SizedBox(height: TSizes.spaceBtwSections),
+                  SizedBox(height: ASizes.spaceBtwSections),
                 ],
               ),
             ),
 
             /// Body
             Padding(
-              padding: const EdgeInsets.all(TSizes.defaultSpace),
+              padding: const EdgeInsets.all(ASizes.defaultSpace),
               child: Column(
                 children: [
                   // Banner Promo Slider
-                  const TPromoSlider(
+                  const APromoSlider(
                     banners: [
-                      TImages.promoBanner1,
-                      TImages.promoBanner2,
-                      TImages.promoBanner3,
+                      AImages.promoBanner1,
+                      AImages.promoBanner2,
+                      AImages.promoBanner3,
                     ],
                   ),
 
-                  const SizedBox(height: TSizes.spaceBtwSections),
+                  const SizedBox(height: ASizes.spaceBtwSections),
 
                   /// Heading
-                  TSectionHeading(
+                  ASectionHeading(
                     title: 'Popular Products',
                     onPressed: () {},
                   ),
 
-                  const SizedBox(height: TSizes.spaceBtwSections),
+                  const SizedBox(height: ASizes.spaceBtwSections),
 
                   /// Popular Products
-                  TGridLayout(
+                  AGridLayout(
                     itemCount: 4,
-                    itemBuilder: (_, index) => const TProductCardVertical(),
+                    itemBuilder: (_, index) => const AProductCardVertical(),
                   ),
                 ],
               ),

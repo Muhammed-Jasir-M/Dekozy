@@ -3,8 +3,8 @@ import 'package:aurakart/utils/constants/colors.dart';
 import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
-class TRoundedContainer extends StatelessWidget {
-  const TRoundedContainer({
+class ARoundedContainer extends StatelessWidget {
+  const ARoundedContainer({
     super.key,
     this.child,
     this.width,
@@ -12,9 +12,9 @@ class TRoundedContainer extends StatelessWidget {
     this.margin,
     this.padding,
     this.showBorder = false,
-    this.radius = TSizes.cardRadiusLg,
-    this.backgroundColor = TColors.white,
-    this.borderColor = TColors.borderPrimary,
+    this.radius = ASizes.cardRadiusLg,
+    this.backgroundColor = AColors.white,
+    this.borderColor = AColors.borderPrimary,
   });
 
   final double? width;

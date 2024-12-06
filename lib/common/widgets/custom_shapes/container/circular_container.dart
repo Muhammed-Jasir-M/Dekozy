@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import "package:aurakart/utils/constants/colors.dart";
 
-class TCircularContainer extends StatelessWidget {
-  const TCircularContainer({
+class ACircularContainer extends StatelessWidget {
+  const ACircularContainer({
     super.key,
     this.child,
     this.width = 400,
@@ -10,7 +10,7 @@ class TCircularContainer extends StatelessWidget {
     this.radius = 400,
     this.padding = 0,
     this.margin,
-    this.backgroundColor = TColors.white,
+    this.backgroundColor = AColors.white,
   });
 
   final double? width;

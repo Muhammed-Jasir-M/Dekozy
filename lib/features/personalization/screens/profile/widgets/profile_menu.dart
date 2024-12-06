@@ -2,8 +2,8 @@ import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-class TProfileMenu extends StatelessWidget {
-  const TProfileMenu({
+class AProfileMenu extends StatelessWidget {
+  const AProfileMenu({
     super.key,
     required this.onPressed,
     required this.title,
@@ -21,7 +21,7 @@ class TProfileMenu extends StatelessWidget {
       onTap: onPressed,
       child: Padding(
         padding:
-            const EdgeInsets.symmetric(vertical: TSizes.spaceBtwItems / 1.5),
+            const EdgeInsets.symmetric(vertical: ASizes.spaceBtwItems / 1.5),
         child: Row(
           children: [
             Expanded(

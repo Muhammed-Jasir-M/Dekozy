@@ -8,34 +8,34 @@ import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:aurakart/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
-class TProductAttributes extends StatelessWidget {
-  const TProductAttributes({super.key});
+class AProductAttributes extends StatelessWidget {
+  const AProductAttributes({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
+    final dark = AHelperFunctions.isDarkMode(context);
     return Column(
       children: [
         // Selected Attribute Pricing & Description
-        TRoundedContainer(
-          backgroundColor: dark ? TColors.darkGrey : TColors.grey,
-          padding: const EdgeInsets.all(TSizes.md),
+        ARoundedContainer(
+          backgroundColor: dark ? AColors.darkGrey : AColors.grey,
+          padding: const EdgeInsets.all(ASizes.md),
           child: Column(
             children: [
               // Title, Price and Stock status
               Row(
                 children: [
-                  const TSectionHeading(
+                  const ASectionHeading(
                     title: 'Variation',
                     showActionbutton: false,
                   ),
-                  const SizedBox(width: TSizes.spaceBtwItems),
+                  const SizedBox(width: ASizes.spaceBtwItems),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         children: [
-                          const TProductTitleText(
+                          const AProductTitleText(
                             title: "Price: ",
                             smallSize: true,
                           ),
@@ -49,17 +49,17 @@ class TProductAttributes extends StatelessWidget {
                                 .apply(decoration: TextDecoration.lineThrough),
                           ),
 
-                          const SizedBox(width: TSizes.spaceBtwItems),
+                          const SizedBox(width: ASizes.spaceBtwItems),
 
                           // Sale Price
-                          const TProductPriceText(price: '20'),
+                          const AProductPriceText(price: '20'),
                         ],
                       ),
 
                       /// Stock
                       Row(
                         children: [
-                          const TProductTitleText(
+                          const AProductTitleText(
                             title: 'Stock: ',
                             smallSize: true,
                           ),
@@ -75,7 +75,7 @@ class TProductAttributes extends StatelessWidget {
               ),
 
               /// Variation Description
-              const TProductTitleText(
+              const AProductTitleText(
                 title:
                     "This is the description of the product and it can go up to max 4 lines.",
                 smallSize: true,
@@ -85,25 +85,25 @@ class TProductAttributes extends StatelessWidget {
           ),
         ),
 
-        const SizedBox(height: TSizes.spaceBtwItems),
+        const SizedBox(height: ASizes.spaceBtwItems),
 
         /// Atributes
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const TSectionHeading(
+            const ASectionHeading(
               title: "Colors",
               showActionbutton: false,
             ),
-            const SizedBox(height: TSizes.spaceBtwItems / 2),
+            const SizedBox(height: ASizes.spaceBtwItems / 2),
             Wrap(
               spacing: 8,
               children: [
-                TChoiceChip(
+                AChoiceChip(
                     text: 'Green', selected: true, onSelected: (value) {}),
-                TChoiceChip(
+                AChoiceChip(
                     text: 'Blue', selected: false, onSelected: (value) {}),
-                TChoiceChip(
+                AChoiceChip(
                     text: 'Pink', selected: false, onSelected: (value) {}),
               ],
             )
@@ -112,19 +112,19 @@ class TProductAttributes extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const TSectionHeading(
+            const ASectionHeading(
               title: "Size",
               showActionbutton: false,
             ),
-            const SizedBox(height: TSizes.spaceBtwItems / 2),
+            const SizedBox(height: ASizes.spaceBtwItems / 2),
             Wrap(
               spacing: 8,
               children: [
-                TChoiceChip(
+                AChoiceChip(
                     text: 'EU 34', selected: true, onSelected: (value) {}),
-                TChoiceChip(
+                AChoiceChip(
                     text: 'EU 36', selected: false, onSelected: (value) {}),
-                TChoiceChip(
+                AChoiceChip(
                     text: 'WU 38', selected: false, onSelected: (value) {}),
               ],
             )

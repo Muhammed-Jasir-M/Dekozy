@@ -14,53 +14,53 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
-class TProductCardVertical extends StatelessWidget {
-  const TProductCardVertical({super.key});
+class AProductCardVertical extends StatelessWidget {
+  const AProductCardVertical({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
+    final dark = AHelperFunctions.isDarkMode(context);
     return GestureDetector(
       onTap: () => Get.to(() => const ProductDetailScreen()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
         decoration: BoxDecoration(
-          boxShadow: [TShadowStyle.verticalProductShadow],
-          borderRadius: BorderRadius.circular(TSizes.productImageRadius),
-          color: dark ? TColors.darkerGrey : TColors.white,
+          boxShadow: [AShadowStyle.verticalProductShadow],
+          borderRadius: BorderRadius.circular(ASizes.productImageRadius),
+          color: dark ? AColors.darkerGrey : Colors.white,
         ),
         child: Column(
           children: [
             /// Thumbnail, Wishlist Button, Discount Tag
-            TRoundedContainer(
+            ARoundedContainer(
               height: 180,
-              padding: const EdgeInsets.all(TSizes.sm),
-              backgroundColor: dark ? TColors.dark : TColors.light,
+              padding: const EdgeInsets.all(ASizes.sm),
+              backgroundColor: dark ? AColors.dark : AColors.light,
               child: Stack(
                 children: [
                   /// Thumbnail Image
-                  const TRoundedImage(
-                    imageUrl: TImages.productImage1,
+                  const ARoundedImage(
+                    imageUrl: AImages.productImage1,
                     applyImageRadius: true,
                   ),
 
                   /// Sale Tag
                   Positioned(
                     top: 12,
-                    child: TRoundedContainer(
-                      radius: TSizes.sm,
-                      backgroundColor: TColors.secondary.withOpacity(0.8),
+                    child: ARoundedContainer(
+                      radius: ASizes.sm,
+                      backgroundColor: AColors.secondary.withOpacity(0.8),
                       padding: const EdgeInsets.symmetric(
-                        horizontal: TSizes.sm,
-                        vertical: TSizes.xs,
+                        horizontal: ASizes.sm,
+                        vertical: ASizes.xs,
                       ),
                       child: Text(
                         '25%',
                         style: Theme.of(context)
                             .textTheme
                             .labelLarge!
-                            .apply(color: TColors.black),
+                            .apply(color: AColors.black),
                       ),
                     ),
                   ),
@@ -69,7 +69,7 @@ class TProductCardVertical extends StatelessWidget {
                   const Positioned(
                     top: 0,
                     right: 0,
-                    child: TCircularIcon(
+                    child: ACircularIcon(
                       icon: Iconsax.heart5,
                       color: Colors.red,
                     ),
@@ -78,20 +78,20 @@ class TProductCardVertical extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: TSizes.spaceBtwItems / 2),
+            const SizedBox(height: ASizes.spaceBtwItems / 2),
 
             ///  Details
             const Padding(
-              padding: EdgeInsets.only(left: TSizes.sm),
+              padding: EdgeInsets.only(left: ASizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  TProductTitleText(
+                  AProductTitleText(
                     title: 'Green Nike Shoe',
                     smallSize: true,
                   ),
-                  SizedBox(height: TSizes.spaceBtwItems / 2),
-                  TBrandTitleWithVerifiedIcon(title: "Nike"),
+                  SizedBox(height: ASizes.spaceBtwItems / 2),
+                  ABrandTitleWithVerifiedIcon(title: "Nike"),
                 ],
               ),
             ),
@@ -105,24 +105,24 @@ class TProductCardVertical extends StatelessWidget {
               children: [
                 /// Price
                 const Padding(
-                  padding: EdgeInsets.only(left: TSizes.sm),
-                  child: TProductPriceText(price: '35.0'),
+                  padding: EdgeInsets.only(left: ASizes.sm),
+                  child: AProductPriceText(price: '35.0'),
                 ),
 
                 /// Add to Cart Button
                 Container(
                   decoration: const BoxDecoration(
-                    color: TColors.dark,
+                    color: AColors.dark,
                     borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(TSizes.cardRadiusMd),
-                      bottomRight: Radius.circular(TSizes.productImageRadius),
+                      topLeft: Radius.circular(ASizes.cardRadiusMd),
+                      bottomRight: Radius.circular(ASizes.productImageRadius),
                     ),
                   ),
                   child: const SizedBox(
-                    width: TSizes.iconLg * 1.2,
-                    height: TSizes.iconLg * 1.2,
+                    width: ASizes.iconLg * 1.2,
+                    height: ASizes.iconLg * 1.2,
                     child: Center(
-                      child: Icon(Iconsax.add, color: TColors.white),
+                      child: Icon(Iconsax.add, color: AColors.white),
                     ),
                   ),
                 ),

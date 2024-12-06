@@ -2,8 +2,8 @@ import 'package:aurakart/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-class TCartCouterIcon extends StatelessWidget {
-  const TCartCouterIcon({
+class ACartCouterIcon extends StatelessWidget {
+  const ACartCouterIcon({
     super.key,
     required this.onPressed,
     this.iconColor,
@@ -18,7 +18,7 @@ class TCartCouterIcon extends StatelessWidget {
       children: [
         IconButton(
           onPressed: () {},
-          icon: const Icon(Iconsax.shopping_bag, color: TColors.white),
+          icon: const Icon(Iconsax.shopping_bag, color: AColors.white),
         ),
         Positioned(
           right: 0,
@@ -26,7 +26,7 @@ class TCartCouterIcon extends StatelessWidget {
             width: 18,
             height: 18,
             decoration: BoxDecoration(
-              color: TColors.black.withOpacity(0.1),
+              color: AColors.black.withOpacity(0.1),
               borderRadius: BorderRadius.circular(100),
             ),
             child: Center(
@@ -35,7 +35,7 @@ class TCartCouterIcon extends StatelessWidget {
                 style: Theme.of(context)
                     .textTheme
                     .labelLarge!
-                    .apply(color: TColors.white, fontSizeFactor: 0.8),
+                    .apply(color: AColors.white, fontSizeFactor: 0.8),
               ),
             ),
           ),

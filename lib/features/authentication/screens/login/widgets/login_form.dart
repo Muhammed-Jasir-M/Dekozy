@@ -7,15 +7,15 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
-class TLoginForm extends StatelessWidget {
-  const TLoginForm({super.key});
+class ALoginForm extends StatelessWidget {
+  const ALoginForm({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Form(
       child: Padding(
         padding: const EdgeInsets.symmetric(
-          vertical: TSizes.spaceBtwSections,
+          vertical: ASizes.spaceBtwSections,
         ),
         child: Column(
           children: [
@@ -23,25 +23,25 @@ class TLoginForm extends StatelessWidget {
             TextFormField(
               decoration: const InputDecoration(
                 prefixIcon: Icon(Iconsax.direct_right),
-                labelText: TTexts.email,
+                labelText: ATexts.email,
               ),
             ),
 
             const SizedBox(
-              height: TSizes.spaceBtwInputFields,
+              height: ASizes.spaceBtwInputFields,
             ),
 
             /// Password
             TextFormField(
               decoration: const InputDecoration(
                 prefixIcon: Icon(Iconsax.password_check),
-                labelText: TTexts.password,
+                labelText: ATexts.password,
                 suffixIcon: Icon(Iconsax.eye_slash),
               ),
             ),
 
             const SizedBox(
-              height: TSizes.spaceBtwInputFields / 2,
+              height: ASizes.spaceBtwInputFields / 2,
             ),
 
             /// Remembear Me & Forget Password
@@ -55,7 +55,7 @@ class TLoginForm extends StatelessWidget {
                       onChanged: (value) {},
                     ),
                     const Text(
-                      TTexts.rememberMe,
+                      ATexts.rememberMe,
                     ),
                   ],
                 ),
@@ -63,23 +63,23 @@ class TLoginForm extends StatelessWidget {
                 /// Forget Password
                 TextButton(
                   onPressed: () => Get.to(() => const ForgetPassword()),
-                  child: const Text(TTexts.forgetPassword),
+                  child: const Text(ATexts.forgetPassword),
                 ),
               ],
             ),
 
-            const SizedBox(height: TSizes.spaceBtwSections),
+            const SizedBox(height: ASizes.spaceBtwSections),
 
             /// Sign In Button
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () => Get.to(() => const NavigationMenu()),
-                child: const Text(TTexts.signIn),
+                child: const Text(ATexts.signIn),
               ),
             ),
 
-            const SizedBox(height: TSizes.spaceBtwSections),
+            const SizedBox(height: ASizes.spaceBtwSections),
 
             /// Create Account Button
             SizedBox(
@@ -87,11 +87,11 @@ class TLoginForm extends StatelessWidget {
               child: OutlinedButton(
                 onPressed: () => Get.to(() => const SignupScreen()),
                 child: const Text(
-                  TTexts.createAccount,
+                  ATexts.createAccount,
                 ),
               ),
             ),
-            const SizedBox(height: TSizes.spaceBtwSections),
+            const SizedBox(height: ASizes.spaceBtwSections),
           ],
         ),
       ),

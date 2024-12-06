@@ -8,8 +8,8 @@ import 'package:aurakart/utils/constants/enums.dart';
 import 'package:aurakart/utils/constants/image_strings.dart';
 import 'package:aurakart/utils/helpers/helper_functions.dart';
 
-class TBrandCard extends StatelessWidget {
-  const TBrandCard({
+class ABrandCard extends StatelessWidget {
+  const ABrandCard({
     super.key,
     required this.showBorder,
     this.onTap,
@@ -20,14 +20,14 @@ class TBrandCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
+    final dark = AHelperFunctions.isDarkMode(context);
 
     return GestureDetector(
       onTap: onTap,
 
       /// Container Design
-      child: TRoundedContainer(
-        padding: const EdgeInsets.all(TSizes.sm),
+      child: ARoundedContainer(
+        padding: const EdgeInsets.all(ASizes.sm),
         showBorder: showBorder,
         backgroundColor: Colors.transparent,
         child: Row(
@@ -35,25 +35,25 @@ class TBrandCard extends StatelessWidget {
           children: [
             /// Icon
             Flexible(
-              child: TCircularImage(
+              child: ACircularImage(
                 isNetworkImage: false,
-                image: TImages.clothIcon,
+                image: AImages.clothIcon,
                 backgroundColor: Colors.transparent,
-                overLayColor: dark ? TColors.white : TColors.black,
+                overLayColor: dark ? AColors.white : AColors.black,
               ),
             ),
 
-            const SizedBox(width: TSizes.spaceBtwItems / 2),
+            const SizedBox(width: ASizes.spaceBtwItems / 2),
 
             // Text
-            // Expanded and Column [minAxisSize] is required to keep the elements in vertical center and 
+            // Expanded and Column [minAxisSize] is required to keep the elements in vertical center and
             // also to keep the text inside the box
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const TBrandTitleWithVerifiedIcon(
+                  const ABrandTitleWithVerifiedIcon(
                     title: "Nike",
                     brandTextSize: TextSizes.large,
                   ),

@@ -22,17 +22,17 @@ class StoreScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
+    final dark = AHelperFunctions.isDarkMode(context);
 
     return DefaultTabController(
       length: 5,
       child: Scaffold(
         /// Appbar
-        appBar: TAppBar(
+        appBar: AAppBar(
           title:
               Text('Store', style: Theme.of(context).textTheme.headlineMedium),
           actions: [
-            TCartCouterIcon(onPressed: () {}),
+            ACartCouterIcon(onPressed: () {}),
           ],
         ),
 
@@ -44,39 +44,39 @@ class StoreScreen extends StatelessWidget {
                 automaticallyImplyLeading: false,
                 pinned: true,
                 floating: true,
-                backgroundColor: dark ? TColors.black : TColors.white,
+                backgroundColor: dark ? AColors.black : AColors.white,
                 expandedHeight: 440, // Space between Appbar and Tapbar
                 flexibleSpace: Padding(
-                  padding: const EdgeInsets.all(TSizes.defaultSpace),
+                  padding: const EdgeInsets.all(ASizes.defaultSpace),
                   child: ListView(
                     shrinkWrap: true,
                     physics: const NeverScrollableScrollPhysics(),
                     children: [
                       /// Search Bar
-                      const SizedBox(height: TSizes.spaceBtwItems),
-                      const TSearchContainer(
+                      const SizedBox(height: ASizes.spaceBtwItems),
+                      const ASearchContainer(
                         text: 'Search in Store',
                         showBorder: true,
                         showBackground: false,
                         padding: EdgeInsets.zero,
                       ),
 
-                      const SizedBox(height: TSizes.spaceBtwSections),
+                      const SizedBox(height: ASizes.spaceBtwSections),
 
                       /// Featured Brands
-                      TSectionHeading(
+                      ASectionHeading(
                         title: 'Featured Brands',
                         onPressed: () {},
                       ),
 
-                      const SizedBox(height: TSizes.spaceBtwItems / 1.5),
+                      const SizedBox(height: ASizes.spaceBtwItems / 1.5),
 
                       /// Brands Grid
-                      TGridLayout(
+                      AGridLayout(
                         itemCount: 4,
                         mainAxisExtent: 80,
                         itemBuilder: (_, index) {
-                          return const TBrandCard(showBorder: false);
+                          return const ABrandCard(showBorder: false);
                         },
                       ),
                     ],
@@ -84,7 +84,7 @@ class StoreScreen extends StatelessWidget {
                 ),
 
                 /// Tabs
-                bottom: const TTabBar(
+                bottom: const ATabBar(
                   tabs: [
                     Tab(child: Text('Sports')),
                     Tab(child: Text('Furniture')),

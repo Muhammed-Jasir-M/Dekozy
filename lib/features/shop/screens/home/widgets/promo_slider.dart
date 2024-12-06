@@ -9,8 +9,8 @@ import 'package:carousel_slider/carousel_state.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class TPromoSlider extends StatelessWidget {
-  const TPromoSlider({
+class APromoSlider extends StatelessWidget {
+  const APromoSlider({
     super.key,
     required this.banners,
   });
@@ -27,21 +27,21 @@ class TPromoSlider extends StatelessWidget {
             viewportFraction: 1,
             onPageChanged: (index, _) => controller.updatePageIndicator(index),
           ),
-          items: banners.map((url) => TRoundedImage(imageUrl: url)).toList(),
+          items: banners.map((url) => ARoundedImage(imageUrl: url)).toList(),
         ),
-        const SizedBox(height: TSizes.spaceBtwItems),
+        const SizedBox(height: ASizes.spaceBtwItems),
         Obx(
           () => Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               for (int i = 0; i < banners.length; i++)
-                TCircularContainer(
+                ACircularContainer(
                   width: 26,
                   height: 4,
                   margin: const EdgeInsets.only(right: 18),
                   backgroundColor: controller.carousalCurrentIndex.value == i
-                      ? TColors.primary
-                      : TColors.grey,
+                      ? AColors.primary
+                      : AColors.grey,
                 ),
             ],
           ),

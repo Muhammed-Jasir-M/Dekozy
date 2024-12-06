@@ -7,15 +7,15 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
-class TSearchContainer extends StatelessWidget {
-  const TSearchContainer({
+class ASearchContainer extends StatelessWidget {
+  const ASearchContainer({
     super.key,
     required this.text,
     this.icon = Iconsax.search_normal,
     this.showBackground = true,
     this.showBorder = true,
     this.onTap,
-    this.padding = const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
+    this.padding = const EdgeInsets.symmetric(horizontal: ASizes.defaultSpace),
   });
 
   final String text;
@@ -26,28 +26,28 @@ class TSearchContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
+    final dark = AHelperFunctions.isDarkMode(context);
 
     return GestureDetector(
       onTap: onTap,
       child: Padding(
         padding: padding,
         child: Container(
-          width: TDeviceUtils.getScreenWidth(context),
-          padding: const EdgeInsets.all(TSizes.md),
+          width: ADeviceUtils.getScreenWidth(context),
+          padding: const EdgeInsets.all(ASizes.md),
           decoration: BoxDecoration(
             color: showBackground
                 ? dark
-                    ? TColors.dark
-                    : TColors.light
+                    ? AColors.dark
+                    : AColors.light
                 : Colors.transparent,
-            borderRadius: BorderRadius.circular(TSizes.cardRadiusLg),
-            border: showBorder ? Border.all(color: TColors.grey) : null,
+            borderRadius: BorderRadius.circular(ASizes.cardRadiusLg),
+            border: showBorder ? Border.all(color: AColors.grey) : null,
           ),
           child: Row(
             children: [
-              Icon(icon, color: TColors.darkGrey),
-              const SizedBox(width: TSizes.spaceBtwItems),
+              Icon(icon, color: AColors.darkGrey),
+              const SizedBox(width: ASizes.spaceBtwItems),
               Text(text, style: Theme.of(context).textTheme.bodySmall),
             ],
           ),

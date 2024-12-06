@@ -14,13 +14,13 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const TAppBar(
+      appBar: const AAppBar(
         showBackArrow: true,
         title: Text('Profile'),
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(ASizes.defaultSpace),
           child: Column(
             children: [
               /// Profile Picture
@@ -28,8 +28,8 @@ class ProfileScreen extends StatelessWidget {
                 width: double.infinity,
                 child: Column(
                   children: [
-                    const TCircularImage(
-                        image: TImages.user, width: 80, height: 80),
+                    const ACircularImage(
+                        image: AImages.user, width: 80, height: 80),
                     TextButton(
                       onPressed: () {},
                       child: const Text('Change Profile Picture'),
@@ -38,55 +38,55 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(height: TSizes.spaceBtwItems / 2),
+              const SizedBox(height: ASizes.spaceBtwItems / 2),
 
               /// Details
               const Divider(),
 
-              const SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: ASizes.spaceBtwItems),
 
               /// Heading Personal Info
-              const TSectionHeading(
+              const ASectionHeading(
                 title: 'Personal Information',
                 showActionbutton: false,
               ),
-              
-              const SizedBox(height: TSizes.spaceBtwItems),
 
-              TProfileMenu(
+              const SizedBox(height: ASizes.spaceBtwItems),
+
+              AProfileMenu(
                 title: 'User ID',
                 value: '45689',
                 icon: Iconsax.copy,
                 onPressed: () {},
               ),
 
-              TProfileMenu(
+              AProfileMenu(
                 title: 'E-mail',
                 value: 'support@aurakart.com',
                 onPressed: () {},
               ),
 
-              TProfileMenu(
+              AProfileMenu(
                 title: 'Phone Number',
                 value: '+91-3178059528',
                 onPressed: () {},
               ),
 
-              TProfileMenu(
+              AProfileMenu(
                 title: 'Gender',
                 value: 'Male',
                 onPressed: () {},
               ),
 
-              TProfileMenu(
+              AProfileMenu(
                 title: 'Date of Birth',
                 value: '18 Oct, 2000',
                 onPressed: () {},
               ),
-              
+
               const Divider(),
 
-              const SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: ASizes.spaceBtwItems),
 
               Center(
                 child: TextButton(

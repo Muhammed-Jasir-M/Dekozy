@@ -2,22 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:aurakart/utils/constants/colors.dart';
 import 'package:aurakart/utils/constants/sizes.dart';
 
-class TOutlinedButtonTheme {
-  TOutlinedButtonTheme._();
+class AOutlinedButtonTheme {
+  AOutlinedButtonTheme._();
 
   // Light Theme For Outline Button
   static final lightOutlineButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
-      foregroundColor: TColors.dark,
-      side: const BorderSide(color: TColors.borderPrimary),
+      foregroundColor: AColors.dark,
+      side: const BorderSide(color: AColors.borderPrimary),
       padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
       textStyle: const TextStyle(
         fontSize: 16.0,
-        color: TColors.black,
+        color: AColors.black,
         fontWeight: FontWeight.w600,
       ),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.buttonRadius)),
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(ASizes.buttonRadius)),
     ),
   );
 
@@ -25,15 +26,17 @@ class TOutlinedButtonTheme {
   static final darkOutlineButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
-      foregroundColor: TColors.light,
-      side: const BorderSide(color: TColors.borderPrimary),
-      padding: const EdgeInsets.symmetric(vertical: TSizes.buttonHeight, horizontal: 20),
+      foregroundColor: AColors.light,
+      side: const BorderSide(color: AColors.borderPrimary),
+      padding: const EdgeInsets.symmetric(
+          vertical: ASizes.buttonHeight, horizontal: 20),
       textStyle: const TextStyle(
         fontSize: 16.0,
-        color: TColors.textWhite,
+        color: AColors.textWhite,
         fontWeight: FontWeight.w600,
       ),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.buttonRadius)),
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(ASizes.buttonRadius)),
     ),
   );
 }

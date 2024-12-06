@@ -19,12 +19,12 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
+    final dark = AHelperFunctions.isDarkMode(context);
 
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding: TSpacingStyle.paddingwithAppBarHeight,
+          padding: ASpacingStyle.paddingwithAppBarHeight,
           child: Column(
             /// Logo, Title & Sub-Title
             children: [
@@ -34,33 +34,33 @@ class LoginScreen extends StatelessWidget {
                   Image(
                     height: 150,
                     image: AssetImage(
-                      dark ? TImages.lightAppLogo : TImages.darkAppLogo,
+                      dark ? AImages.lightAppLogo : AImages.darkAppLogo,
                     ),
                   ),
                   Text(
-                    TTexts.loginTitle,
+                    ATexts.loginTitle,
                     style: Theme.of(context).textTheme.headlineMedium,
                   ),
                   const SizedBox(
-                    height: TSizes.sm,
+                    height: ASizes.sm,
                   ),
                   Text(
-                    TTexts.loginSubTitle,
+                    ATexts.loginSubTitle,
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
                 ],
               ),
 
               /// Form
-              const TLoginForm(),
+              const ALoginForm(),
 
               /// Divider
-              TFormDivider(dividerText: TTexts.orSignInwith.capitalize!),
+              AFormDivider(dividerText: ATexts.orSignInwith.capitalize!),
 
-              const SizedBox(height: TSizes.spaceBtwSections),
+              const SizedBox(height: ASizes.spaceBtwSections),
 
-            /// Social Buttons
-              const TSocialButtons(),
+              /// Social Buttons
+              const ASocialButtons(),
             ],
           ),
         ),

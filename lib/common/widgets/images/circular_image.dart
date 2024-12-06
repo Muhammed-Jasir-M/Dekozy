@@ -4,8 +4,8 @@ import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:aurakart/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
-class TCircularImage extends StatelessWidget {
-  const TCircularImage({
+class ACircularImage extends StatelessWidget {
+  const ACircularImage({
     super.key,
     this.width = 56,
     this.height = 56,
@@ -13,7 +13,7 @@ class TCircularImage extends StatelessWidget {
     this.backgroundColor,
     required this.image,
     this.fit = BoxFit.cover,
-    this.padding = TSizes.sm,
+    this.padding = ASizes.sm,
     this.isNetworkImage = false,
   });
 
@@ -29,12 +29,12 @@ class TCircularImage extends StatelessWidget {
     return Container(
       width: 56,
       height: 56,
-      padding: const EdgeInsets.all(TSizes.sm),
+      padding: const EdgeInsets.all(ASizes.sm),
       decoration: BoxDecoration(
         color: backgroundColor ??
-            (THelperFunctions.isDarkMode(context)
-                ? TColors.black
-                : TColors.white),
+            (AHelperFunctions.isDarkMode(context)
+                ? AColors.black
+                : AColors.white),
         borderRadius: BorderRadius.circular(100),
       ),
       child: Center(

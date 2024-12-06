@@ -1,65 +1,65 @@
 import 'package:flutter/material.dart';
 import 'package:aurakart/utils/constants/colors.dart';
 
-class TTextTheme {
-  TTextTheme._();
+class ATextTheme {
+  ATextTheme._();
 
   // Light Theme For Text
   static TextTheme lightTextTheme = TextTheme(
     headlineLarge: const TextStyle().copyWith(
       fontSize: 32.0,
       fontWeight: FontWeight.bold,
-      color: TColors.dark,
+      color: AColors.dark,
     ),
     headlineMedium: const TextStyle().copyWith(
       fontSize: 24.0,
       fontWeight: FontWeight.w600,
-      color: TColors.dark,
+      color: AColors.dark,
     ),
     headlineSmall: const TextStyle().copyWith(
       fontSize: 18.0,
       fontWeight: FontWeight.w600,
-      color: TColors.dark,
+      color: AColors.dark,
     ),
     titleLarge: const TextStyle().copyWith(
       fontSize: 16.0,
       fontWeight: FontWeight.w600,
-      color: TColors.dark,
+      color: AColors.dark,
     ),
     titleMedium: const TextStyle().copyWith(
       fontSize: 16.0,
       fontWeight: FontWeight.w500,
-      color: TColors.dark,
+      color: AColors.dark,
     ),
     titleSmall: const TextStyle().copyWith(
       fontSize: 16.0,
       fontWeight: FontWeight.w400,
-      color: TColors.dark,
+      color: AColors.dark,
     ),
     bodyLarge: const TextStyle().copyWith(
       fontSize: 14.0,
       fontWeight: FontWeight.w500,
-      color: TColors.dark,
+      color: AColors.dark,
     ),
     bodyMedium: const TextStyle().copyWith(
       fontSize: 14.0,
       fontWeight: FontWeight.normal,
-      color: TColors.dark,
+      color: AColors.dark,
     ),
     bodySmall: const TextStyle().copyWith(
       fontSize: 14.0,
       fontWeight: FontWeight.w500,
-      color: TColors.dark.withOpacity(0.5),
+      color: AColors.dark.withOpacity(0.5),
     ),
     labelLarge: const TextStyle().copyWith(
       fontSize: 12.0,
       fontWeight: FontWeight.normal,
-      color: TColors.dark,
+      color: AColors.dark,
     ),
     labelMedium: const TextStyle().copyWith(
       fontSize: 12.0,
       fontWeight: FontWeight.normal,
-      color: TColors.dark.withOpacity(0.5),
+      color: AColors.dark.withOpacity(0.5),
     ),
   );
 
@@ -68,57 +68,57 @@ class TTextTheme {
     headlineLarge: const TextStyle().copyWith(
       fontSize: 32.0,
       fontWeight: FontWeight.bold,
-      color: TColors.light,
+      color: AColors.light,
     ),
     headlineMedium: const TextStyle().copyWith(
       fontSize: 24.0,
       fontWeight: FontWeight.w600,
-      color: TColors.light,
+      color: AColors.light,
     ),
     headlineSmall: const TextStyle().copyWith(
       fontSize: 18.0,
       fontWeight: FontWeight.w600,
-      color: TColors.light,
+      color: AColors.light,
     ),
     titleLarge: const TextStyle().copyWith(
       fontSize: 16.0,
       fontWeight: FontWeight.w600,
-      color: TColors.light,
+      color: AColors.light,
     ),
     titleMedium: const TextStyle().copyWith(
       fontSize: 16.0,
       fontWeight: FontWeight.w500,
-      color: TColors.light,
+      color: AColors.light,
     ),
     titleSmall: const TextStyle().copyWith(
       fontSize: 16.0,
       fontWeight: FontWeight.w400,
-      color: TColors.light,
+      color: AColors.light,
     ),
     bodyLarge: const TextStyle().copyWith(
       fontSize: 14.0,
       fontWeight: FontWeight.w500,
-      color: TColors.light,
+      color: AColors.light,
     ),
     bodyMedium: const TextStyle().copyWith(
       fontSize: 14.0,
       fontWeight: FontWeight.normal,
-      color: TColors.light,
+      color: AColors.light,
     ),
     bodySmall: const TextStyle().copyWith(
       fontSize: 14.0,
       fontWeight: FontWeight.w500,
-      color: TColors.light.withOpacity(0.5),
+      color: AColors.light.withOpacity(0.5),
     ),
     labelLarge: const TextStyle().copyWith(
       fontSize: 12.0,
       fontWeight: FontWeight.normal,
-      color: TColors.light,
+      color: AColors.light,
     ),
     labelMedium: const TextStyle().copyWith(
       fontSize: 12.0,
       fontWeight: FontWeight.normal,
-      color: TColors.light.withOpacity(0.5),
+      color: AColors.light.withOpacity(0.5),
     ),
   );
 }

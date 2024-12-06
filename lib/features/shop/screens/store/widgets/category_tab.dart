@@ -18,40 +18,40 @@ class TCategoryTab extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       children: [
         Padding(
-          padding: const EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(ASizes.defaultSpace),
           child: Column(
             children: [
               // Brands
-              const TBrandShowcase(
+              const ABrandShowcase(
                 images: [
-                  TImages.productImage10,
-                  TImages.productImage11,
-                  TImages.productImage16
+                  AImages.productImage10,
+                  AImages.productImage11,
+                  AImages.productImage16
                 ],
               ),
 
-              const TBrandShowcase(
+              const ABrandShowcase(
                 images: [
-                  TImages.productImage10,
-                  TImages.productImage11,
-                  TImages.productImage16
+                  AImages.productImage10,
+                  AImages.productImage11,
+                  AImages.productImage16
                 ],
               ),
 
-              const SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: ASizes.spaceBtwItems),
 
               // Products
-              TSectionHeading(
+              ASectionHeading(
                 title: 'You might like',
                 showActionbutton: true,
                 onPressed: () {},
               ),
 
-              const SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: ASizes.spaceBtwItems),
 
-              TGridLayout(
+              AGridLayout(
                 itemCount: 4,
-                itemBuilder: (_, index) => const TProductCardVertical(),
+                itemBuilder: (_, index) => const AProductCardVertical(),
               ),
             ],
           ),

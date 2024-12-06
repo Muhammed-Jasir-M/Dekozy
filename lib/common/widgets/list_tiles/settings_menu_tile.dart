@@ -1,8 +1,8 @@
 import 'package:aurakart/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
-class TSettingsMenuTile extends StatelessWidget {
-  const TSettingsMenuTile({
+class ASettingsMenuTile extends StatelessWidget {
+  const ASettingsMenuTile({
     super.key,
     required this.icon,
     required this.title,
@@ -22,7 +22,7 @@ class TSettingsMenuTile extends StatelessWidget {
       leading: Icon(
         icon,
         size: 28,
-        color: TColors.primary,
+        color: AColors.primary,
       ),
       title: Text(title, style: Theme.of(context).textTheme.titleMedium),
       subtitle: Text(

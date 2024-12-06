@@ -2,8 +2,8 @@ import 'package:aurakart/utils/constants/colors.dart';
 import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
-class TAppbarTheme {
-  TAppbarTheme._();
+class AAppbarTheme {
+  AAppbarTheme._();
 
   // Light Theme For Appbar
   static const lightAppbarTheme = AppBarTheme(
@@ -12,11 +12,11 @@ class TAppbarTheme {
     scrolledUnderElevation: 0,
     backgroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
-    iconTheme: IconThemeData(color: TColors.black, size: TSizes.iconMd),
-    actionsIconTheme: IconThemeData(color: TColors.black, size: TSizes.iconMd),
+    iconTheme: IconThemeData(color: AColors.black, size: ASizes.iconMd),
+    actionsIconTheme: IconThemeData(color: AColors.black, size: ASizes.iconMd),
     titleTextStyle: TextStyle(
       fontSize: 18.0,
-      color: TColors.black,
+      color: AColors.black,
       fontWeight: FontWeight.w600,
     ),
   );
@@ -28,11 +28,11 @@ class TAppbarTheme {
     scrolledUnderElevation: 0,
     backgroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
-    iconTheme: IconThemeData(color: TColors.black, size: TSizes.iconMd),
-    actionsIconTheme: IconThemeData(color: TColors.white, size: TSizes.iconMd),
+    iconTheme: IconThemeData(color: AColors.black, size: ASizes.iconMd),
+    actionsIconTheme: IconThemeData(color: AColors.white, size: ASizes.iconMd),
     titleTextStyle: TextStyle(
       fontSize: 18.0,
-      color: TColors.white,
+      color: AColors.white,
       fontWeight: FontWeight.w600,
     ),
   );

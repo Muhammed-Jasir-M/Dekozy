@@ -9,25 +9,25 @@ import 'package:aurakart/utils/theme/custom_themes/outlined_button_theme.dart';
 import 'package:aurakart/utils/theme/custom_themes/text_field_theme.dart';
 import 'package:aurakart/utils/theme/custom_themes/text_theme.dart';
 
-class TAppTheme {
-  TAppTheme._(); // To avoid creating instances
+class AAppTheme {
+  AAppTheme._(); // To avoid creating instances
 
   // Light Theme
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
     brightness: Brightness.light,
-    primaryColor: TColors.primary,
-    disabledColor: TColors.grey,
-    scaffoldBackgroundColor: TColors.white,
-    textTheme: TTextTheme.lightTextTheme,
-    elevatedButtonTheme: TElevetedButtonTheme.lightElevetedButtonTheme,
-    appBarTheme: TAppbarTheme.lightAppbarTheme,
-    bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
-    checkboxTheme: TCheckboxTheme.lightCheckboxTheme,
-    outlinedButtonTheme: TOutlinedButtonTheme.lightOutlineButtonTheme,
-    chipTheme: TChipTheme.lightChipTheme,
-    inputDecorationTheme: TTextFieldTheme.lightInputDecorationTheme,
+    primaryColor: AColors.primary,
+    disabledColor: AColors.grey,
+    scaffoldBackgroundColor: AColors.white,
+    textTheme: ATextTheme.lightTextTheme,
+    elevatedButtonTheme: AElevetedButtonTheme.lightElevetedButtonTheme,
+    appBarTheme: AAppbarTheme.lightAppbarTheme,
+    bottomSheetTheme: ABottomSheetTheme.lightBottomSheetTheme,
+    checkboxTheme: ACheckboxTheme.lightCheckboxTheme,
+    outlinedButtonTheme: AOutlinedButtonTheme.lightOutlineButtonTheme,
+    chipTheme: AChipTheme.lightChipTheme,
+    inputDecorationTheme: ATextFieldTheme.lightInputDecorationTheme,
   );
 
   // Dark Theme
@@ -35,16 +35,16 @@ class TAppTheme {
     useMaterial3: true,
     fontFamily: 'Poppins',
     brightness: Brightness.dark,
-    primaryColor: TColors.primary,
-    disabledColor: TColors.grey,
+    primaryColor: AColors.primary,
+    disabledColor: AColors.grey,
     scaffoldBackgroundColor: Colors.black,
-    textTheme: TTextTheme.darkTextTheme,
-    elevatedButtonTheme: TElevetedButtonTheme.darkElevetedButtonTheme,
-    appBarTheme: TAppbarTheme.darkAppbarTheme,
-    bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
-    checkboxTheme: TCheckboxTheme.darkCheckboxTheme,
-    outlinedButtonTheme: TOutlinedButtonTheme.darkOutlineButtonTheme,
-    chipTheme: TChipTheme.darkChipTheme,
-    inputDecorationTheme: TTextFieldTheme.darkInputDecorationTheme,
+    textTheme: ATextTheme.darkTextTheme,
+    elevatedButtonTheme: AElevetedButtonTheme.darkElevetedButtonTheme,
+    appBarTheme: AAppbarTheme.darkAppbarTheme,
+    bottomSheetTheme: ABottomSheetTheme.darkBottomSheetTheme,
+    checkboxTheme: ACheckboxTheme.darkCheckboxTheme,
+    outlinedButtonTheme: AOutlinedButtonTheme.darkOutlineButtonTheme,
+    chipTheme: AChipTheme.darkChipTheme,
+    inputDecorationTheme: ATextFieldTheme.darkInputDecorationTheme,
   );
 }

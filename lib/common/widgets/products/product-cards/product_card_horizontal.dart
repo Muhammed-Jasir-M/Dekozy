@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TProductHorizontal extends StatelessWidget {
-  const TProductHorizontal({super.key});
+class AProductHorizontal extends StatelessWidget {
+  const AProductHorizontal({super.key});
 
   @override
   Widget build(BuildContext context) {

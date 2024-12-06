@@ -6,8 +6,8 @@ import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:aurakart/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
-class TBrandShowcase extends StatelessWidget {
-  const TBrandShowcase({
+class ABrandShowcase extends StatelessWidget {
+  const ABrandShowcase({
     super.key,
     required this.images,
   });
@@ -16,16 +16,16 @@ class TBrandShowcase extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TRoundedContainer(
+    return ARoundedContainer(
       showBorder: true,
-      borderColor: TColors.darkGrey,
+      borderColor: AColors.darkGrey,
       backgroundColor: Colors.transparent,
-      padding: const EdgeInsets.all(TSizes.md),
-      margin: const EdgeInsets.only(bottom: TSizes.spaceBtwItems),
+      padding: const EdgeInsets.all(ASizes.md),
+      margin: const EdgeInsets.only(bottom: ASizes.spaceBtwItems),
       child: Column(
         children: [
           // Brands with Product Count
-          const TBrandCard(showBorder: false),
+          const ABrandCard(showBorder: false),
 
           // Brand Top 3 Product Images
           Row(
@@ -41,13 +41,13 @@ class TBrandShowcase extends StatelessWidget {
 
 Widget brandTopProductImageWidget(String image, context) {
   return Expanded(
-    child: TRoundedContainer(
+    child: ARoundedContainer(
       height: 100,
-      backgroundColor: THelperFunctions.isDarkMode(context)
-          ? TColors.darkerGrey
-          : TColors.light,
-      margin: const EdgeInsets.only(right: TSizes.sm),
-      padding: const EdgeInsets.all(TSizes.md),
+      backgroundColor: AHelperFunctions.isDarkMode(context)
+          ? AColors.darkerGrey
+          : AColors.light,
+      margin: const EdgeInsets.only(right: ASizes.sm),
+      padding: const EdgeInsets.all(ASizes.md),
       child: Image(
         image: AssetImage(image),
         fit: BoxFit.contain,

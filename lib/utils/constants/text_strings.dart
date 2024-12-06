@@ -1,7 +1,7 @@
 // GLOBAL Texts
 
-class TTexts {
-  TTexts._();
+class ATexts {
+  ATexts._();
 
   // Global Texts
   static const String submit = 'Submit';

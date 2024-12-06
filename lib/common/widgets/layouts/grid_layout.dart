@@ -2,8 +2,8 @@ import 'package:aurakart/common/widgets/products/product-cards/product_card_veri
 import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
-class TGridLayout extends StatelessWidget {
-  const TGridLayout({
+class AGridLayout extends StatelessWidget {
+  const AGridLayout({
     super.key,
     required this.itemCount,
     this.mainAxisExtent = 288,
@@ -23,8 +23,8 @@ class TGridLayout extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        mainAxisSpacing: TSizes.gridViewSpacing,
-        crossAxisSpacing: TSizes.gridViewSpacing,
+        mainAxisSpacing: ASizes.gridViewSpacing,
+        crossAxisSpacing: ASizes.gridViewSpacing,
         mainAxisExtent: mainAxisExtent,
       ),
       itemBuilder: itemBuilder,

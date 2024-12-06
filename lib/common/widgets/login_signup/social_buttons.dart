@@ -3,8 +3,8 @@ import 'package:aurakart/utils/constants/image_strings.dart';
 import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
-class TSocialButtons extends StatelessWidget {
-  const TSocialButtons({super.key});
+class ASocialButtons extends StatelessWidget {
+  const ASocialButtons({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,32 +13,32 @@ class TSocialButtons extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
-            border: Border.all(color: TColors.grey),
+            border: Border.all(color: AColors.grey),
             borderRadius: BorderRadius.circular(100),
           ),
           child: IconButton(
             onPressed: () {},
             icon: const Image(
-              width: TSizes.iconMd,
-              height: TSizes.iconMd,
-              image: AssetImage(TImages.google),
+              width: ASizes.iconMd,
+              height: ASizes.iconMd,
+              image: AssetImage(AImages.google),
             ),
           ),
         ),
         const SizedBox(
-          width: TSizes.spaceBtwItems,
+          width: ASizes.spaceBtwItems,
         ),
         Container(
           decoration: BoxDecoration(
-            border: Border.all(color: TColors.grey),
+            border: Border.all(color: AColors.grey),
             borderRadius: BorderRadius.circular(100),
           ),
           child: IconButton(
             onPressed: () {},
             icon: const Image(
-              width: TSizes.iconMd,
-              height: TSizes.iconMd,
-              image: AssetImage(TImages.facebook),
+              width: ASizes.iconMd,
+              height: ASizes.iconMd,
+              image: AssetImage(AImages.facebook),
             ),
           ),
         ),

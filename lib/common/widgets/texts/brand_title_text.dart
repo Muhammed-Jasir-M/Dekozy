@@ -1,8 +1,8 @@
 import 'package:aurakart/utils/constants/enums.dart';
 import 'package:flutter/material.dart';
 
-class TBrandTitleText extends StatelessWidget {
-  const TBrandTitleText({
+class ABrandTitleText extends StatelessWidget {
+  const ABrandTitleText({
     super.key,
     this.color,
     this.maxLines = 1,

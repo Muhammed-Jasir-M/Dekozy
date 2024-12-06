@@ -2,8 +2,8 @@ import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-class TRatingAndShare extends StatelessWidget {
-  const TRatingAndShare({
+class ARatingAndShare extends StatelessWidget {
+  const ARatingAndShare({
     super.key,
   });
 
@@ -20,9 +20,7 @@ class TRatingAndShare extends StatelessWidget {
               color: Colors.amber,
               size: 24,
             ),
-
-            const SizedBox(width: TSizes.spaceBtwItems / 2),
-
+            const SizedBox(width: ASizes.spaceBtwItems / 2),
             Text.rich(
               TextSpan(
                 children: [
@@ -44,7 +42,7 @@ class TRatingAndShare extends StatelessWidget {
           onPressed: () {},
           icon: const Icon(
             Icons.share,
-            size: TSizes.iconMd,
+            size: ASizes.iconMd,
           ),
         )
       ],

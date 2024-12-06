@@ -5,13 +5,13 @@ import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-class TBrandTitleWithVerifiedIcon extends StatelessWidget {
-  const TBrandTitleWithVerifiedIcon({
+class ABrandTitleWithVerifiedIcon extends StatelessWidget {
+  const ABrandTitleWithVerifiedIcon({
     super.key,
     this.textColor,
     this.maxLines = 1,
     required this.title,
-    this.iconColor = TColors.primary,
+    this.iconColor = AColors.primary,
     this.textAlign = TextAlign.center,
     this.brandTextSize = TextSizes.small,
   });
@@ -28,7 +28,7 @@ class TBrandTitleWithVerifiedIcon extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         Flexible(
-          child: TBrandTitleText(
+          child: ABrandTitleText(
             title: title,
             color: textColor,
             maxLines: maxLines,
@@ -36,11 +36,11 @@ class TBrandTitleWithVerifiedIcon extends StatelessWidget {
             brandTextSize: brandTextSize,
           ),
         ),
-        const SizedBox(width: TSizes.xs),
+        const SizedBox(width: ASizes.xs),
         Icon(
           Iconsax.verify5,
           color: iconColor,
-          size: TSizes.iconXs,
+          size: ASizes.iconXs,
         ),
       ],
     );

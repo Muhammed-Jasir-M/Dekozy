@@ -4,37 +4,37 @@ import 'package:aurakart/utils/constants/colors.dart';
 import 'package:aurakart/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 
-class THomeAppbar extends StatelessWidget {
-  const THomeAppbar({
+class AHomeAppbar extends StatelessWidget {
+  const AHomeAppbar({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
-    return TAppBar(
+    return AAppBar(
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            TTexts.homeAppbarTitle,
+            ATexts.homeAppbarTitle,
             style: Theme.of(context)
                 .textTheme
                 .labelMedium!
-                .apply(color: TColors.grey),
+                .apply(color: AColors.grey),
           ),
           Text(
-            TTexts.homeAppbarSubTitle,
+            ATexts.homeAppbarSubTitle,
             style: Theme.of(context)
                 .textTheme
                 .headlineSmall!
-                .apply(color: TColors.white),
+                .apply(color: AColors.white),
           ),
         ],
       ),
       actions: [
-        TCartCouterIcon(
+        ACartCouterIcon(
           onPressed: () {},
-          iconColor: TColors.white,
+          iconColor: AColors.white,
         ),
       ],
     );

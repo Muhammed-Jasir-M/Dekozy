@@ -4,13 +4,13 @@ import 'package:aurakart/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-class TCircularIcon extends StatelessWidget {
-  const TCircularIcon({
+class ACircularIcon extends StatelessWidget {
+  const ACircularIcon({
     super.key,
     required this.icon,
     this.width,
     this.height,
-    this.size = TSizes.lg,
+    this.size = ASizes.lg,
     this.onPressed,
     this.color,
     this.backgroundColor,
@@ -23,7 +23,7 @@ class TCircularIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
+    final dark = AHelperFunctions.isDarkMode(context);
 
     return Container(
       width: width,
@@ -33,8 +33,8 @@ class TCircularIcon extends StatelessWidget {
         color: backgroundColor != null
             ? backgroundColor!
             : dark
-                ? TColors.black.withOpacity(0.9)
-                : TColors.white.withOpacity(0.9),
+                ? AColors.black.withOpacity(0.9)
+                : AColors.white.withOpacity(0.9),
       ),
       child: IconButton(
         onPressed: onPressed,

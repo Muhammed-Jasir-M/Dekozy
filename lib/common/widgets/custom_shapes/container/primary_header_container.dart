@@ -3,8 +3,8 @@ import 'package:aurakart/common/widgets/custom_shapes/curved_edges/curved_edges_
 import 'package:aurakart/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
-class TPrimaryHeaderContainer extends StatelessWidget {
-  const TPrimaryHeaderContainer({
+class APrimaryHeaderContainer extends StatelessWidget {
+  const APrimaryHeaderContainer({
     super.key,
     required this.child,
   });
@@ -13,9 +13,9 @@ class TPrimaryHeaderContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TCurvedEdgesWidget(
+    return ACurvedEdgesWidget(
       child: Container(
-        color: TColors.primary,
+        color: AColors.primary,
         padding: const EdgeInsets.only(bottom: 0),
         child: Stack(
           children: [
@@ -23,15 +23,15 @@ class TPrimaryHeaderContainer extends StatelessWidget {
             Positioned(
               top: -150,
               right: -250,
-              child: TCircularContainer(
-                backgroundColor: TColors.textWhite.withOpacity(0.1),
+              child: ACircularContainer(
+                backgroundColor: AColors.textWhite.withOpacity(0.1),
               ),
             ),
             Positioned(
               top: 100,
               right: -300,
-              child: TCircularContainer(
-                backgroundColor: TColors.textWhite.withOpacity(0.1),
+              child: ACircularContainer(
+                backgroundColor: AColors.textWhite.withOpacity(0.1),
               ),
             ),
             child,

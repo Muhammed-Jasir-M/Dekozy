@@ -10,14 +10,14 @@ import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:aurakart/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
-class TProductMetaData extends StatelessWidget {
-  const TProductMetaData({
+class AProductMetaData extends StatelessWidget {
+  const AProductMetaData({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
-    final darkMode = THelperFunctions.isDarkMode(context);
+    final darkMode = AHelperFunctions.isDarkMode(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -25,23 +25,23 @@ class TProductMetaData extends StatelessWidget {
         Row(
           children: [
             /// Sale Tag
-            TRoundedContainer(
-              radius: TSizes.sm,
-              backgroundColor: TColors.secondary.withOpacity(0.8),
+            ARoundedContainer(
+              radius: ASizes.sm,
+              backgroundColor: AColors.secondary.withOpacity(0.8),
               padding: const EdgeInsets.symmetric(
-                horizontal: TSizes.sm,
-                vertical: TSizes.xs,
+                horizontal: ASizes.sm,
+                vertical: ASizes.xs,
               ),
               child: Text(
                 '25%',
                 style: Theme.of(context)
                     .textTheme
                     .labelLarge!
-                    .apply(color: TColors.black),
+                    .apply(color: AColors.black),
               ),
             ),
 
-            const SizedBox(width: TSizes.spaceBtwItems),
+            const SizedBox(width: ASizes.spaceBtwItems),
 
             /// Price
             Text(
@@ -52,46 +52,44 @@ class TProductMetaData extends StatelessWidget {
                   .apply(decoration: TextDecoration.lineThrough),
             ),
 
-            const SizedBox(width: TSizes.spaceBtwItems),
+            const SizedBox(width: ASizes.spaceBtwItems),
 
-            const TProductPriceText(
+            const AProductPriceText(
               price: '175',
               isLarge: true,
             ),
           ],
         ),
 
-        const SizedBox(height: TSizes.spaceBtwItems / 1.5),
+        const SizedBox(height: ASizes.spaceBtwItems / 1.5),
 
         /// Title
-        const TProductTitleText(title: 'Green Nike Sports Shirt'),
+        const AProductTitleText(title: 'Green Nike Sports Shirt'),
 
-        const SizedBox(height: TSizes.spaceBtwItems / 1.5),
+        const SizedBox(height: ASizes.spaceBtwItems / 1.5),
 
         /// Stock Status
         Row(
           children: [
-            const TProductTitleText(title: 'Status:'),
-            const SizedBox(width: TSizes.spaceBtwItems),
+            const AProductTitleText(title: 'Status:'),
+            const SizedBox(width: ASizes.spaceBtwItems),
             Text('In Stock', style: Theme.of(context).textTheme.titleMedium),
           ],
         ),
 
-        const SizedBox(height: TSizes.spaceBtwItems / 1.5),
+        const SizedBox(height: ASizes.spaceBtwItems / 1.5),
 
         /// Brand
         Row(
           children: [
-            TCircularImage(
-              image: TImages.shoeIcon,
+            ACircularImage(
+              image: AImages.shoeIcon,
               width: 28,
               height: 28,
-              overLayColor: darkMode ? TColors.white : TColors.black,
+              overLayColor: darkMode ? AColors.white : AColors.black,
             ),
-
-            const SizedBox(width: TSizes.spaceBtwItems / 4),
-            
-            const TBrandTitleWithVerifiedIcon(
+            const SizedBox(width: ASizes.spaceBtwItems / 4),
+            const ABrandTitleWithVerifiedIcon(
               title: 'Nike',
               brandTextSize: TextSizes.medium,
             ),

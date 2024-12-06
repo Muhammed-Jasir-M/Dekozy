@@ -23,53 +23,53 @@ class ResetPassword extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(ASizes.defaultSpace),
           child: Column(
             children: [
               /// Image
               Image(
-                image: const AssetImage(TImages.deleiveredEmailIllustration),
-                width: THelperFunctions.screenWidth() * 0.6,
+                image: const AssetImage(AImages.deleiveredEmailIllustration),
+                width: AHelperFunctions.screenWidth() * 0.6,
               ),
 
               const SizedBox(
-                height: TSizes.spaceBtwSections,
+                height: ASizes.spaceBtwSections,
               ),
 
               Text(
-                TTexts.changeYourPasswordTitle,
+                ATexts.changeYourPasswordTitle,
                 style: Theme.of(context).textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),
 
-              const SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: ASizes.spaceBtwItems),
 
               Text(
-                TTexts.changeYourPasswordSubTitle,
+                ATexts.changeYourPasswordSubTitle,
                 style: Theme.of(context).textTheme.labelMedium,
                 textAlign: TextAlign.center,
               ),
 
-              const SizedBox(height: TSizes.spaceBtwSections),
+              const SizedBox(height: ASizes.spaceBtwSections),
 
               // Buttons
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {},
-                  child: const Text(TTexts.done),
+                  child: const Text(ATexts.done),
                 ),
               ),
 
               const SizedBox(
-                height: TSizes.spaceBtwItems,
+                height: ASizes.spaceBtwItems,
               ),
 
               SizedBox(
                 width: double.infinity,
                 child: TextButton(
                   onPressed: () {},
-                  child: const Text(TTexts.resendEmail),
+                  child: const Text(ATexts.resendEmail),
                 ),
               )
             ],

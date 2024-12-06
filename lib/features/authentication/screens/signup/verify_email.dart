@@ -26,29 +26,29 @@ class VerifyEmailScreen extends StatelessWidget {
       body: SingleChildScrollView(
         /// Padding to all sides
         child: Padding(
-          padding: const EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(ASizes.defaultSpace),
           child: SizedBox(
             width: double.infinity,
             child: Column(
               children: [
                 /// Image
                 Image(
-                  image: const AssetImage(TImages.deleiveredEmailIllustration),
-                  width: THelperFunctions.screenWidth() * 0.6,
+                  image: const AssetImage(AImages.deleiveredEmailIllustration),
+                  width: AHelperFunctions.screenWidth() * 0.6,
                 ),
 
                 const SizedBox(
-                  height: TSizes.spaceBtwSections,
+                  height: ASizes.spaceBtwSections,
                 ),
 
                 /// Title & SubTitle
                 Text(
-                  TTexts.confirmEmail,
+                  ATexts.confirmEmail,
                   style: Theme.of(context).textTheme.headlineMedium,
                   textAlign: TextAlign.center,
                 ),
 
-                const SizedBox(height: TSizes.spaceBtwItems),
+                const SizedBox(height: ASizes.spaceBtwItems),
 
                 Text(
                   'support@aurakart.com',
@@ -56,15 +56,15 @@ class VerifyEmailScreen extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
 
-                const SizedBox(height: TSizes.spaceBtwItems),
+                const SizedBox(height: ASizes.spaceBtwItems),
 
                 Text(
-                  TTexts.confirmEmailSubTitle,
+                  ATexts.confirmEmailSubTitle,
                   style: Theme.of(context).textTheme.labelMedium,
                   textAlign: TextAlign.center,
                 ),
 
-                const SizedBox(height: TSizes.spaceBtwSections),
+                const SizedBox(height: ASizes.spaceBtwSections),
 
                 // Buttons
                 SizedBox(
@@ -73,22 +73,22 @@ class VerifyEmailScreen extends StatelessWidget {
                     onPressed: () => Get.to(
                       () => SuccessScreen(
                         onPressed: () => Get.to(() => const LoginScreen()),
-                        image: TImages.signupSuccessIllustration,
-                        title: TTexts.yourAccountCreatedTitle,
-                        subTitle: TTexts.yourAccountCreatedSubTitle,
+                        image: AImages.signupSuccessIllustration,
+                        title: ATexts.yourAccountCreatedTitle,
+                        subTitle: ATexts.yourAccountCreatedSubTitle,
                       ),
                     ),
-                    child: const Text(TTexts.tContinue),
+                    child: const Text(ATexts.tContinue),
                   ),
                 ),
                 const SizedBox(
-                  height: TSizes.spaceBtwItems,
+                  height: ASizes.spaceBtwItems,
                 ),
                 SizedBox(
                   width: double.infinity,
                   child: TextButton(
                     onPressed: () {},
-                    child: const Text(TTexts.resendEmail),
+                    child: const Text(ATexts.resendEmail),
                   ),
                 ),
               ],

@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: TTexts.appName,
+      title: ATexts.appName,
       themeMode: ThemeMode.system,
-      theme: TAppTheme.lightTheme,
-      darkTheme: TAppTheme.darkTheme,
+      theme: AAppTheme.lightTheme,
+      darkTheme: AAppTheme.darkTheme,
       home: const OnBoardingScreen(),
     );
   }

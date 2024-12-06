@@ -1,5 +1,5 @@
-class TImages {
-  TImages._();
+class AImages {
+  AImages._();
 
   // App Logos
   static const String darkAppLogo = "assets/logos/splash-black-logo.png";
