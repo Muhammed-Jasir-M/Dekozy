@@ -1,5 +1,7 @@
+import 'package:aurakart/features/shop/screens/cart/cart.dart';
 import 'package:aurakart/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class ACartCouterIcon extends StatelessWidget {
@@ -17,7 +19,7 @@ class ACartCouterIcon extends StatelessWidget {
     return Stack(
       children: [
         IconButton(
-          onPressed: () {},
+          onPressed: () => Get.to(() => const CartScreen()),
           icon: const Icon(Iconsax.shopping_bag, color: AColors.white),
         ),
         Positioned(
