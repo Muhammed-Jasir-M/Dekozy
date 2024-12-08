@@ -4,6 +4,7 @@ import 'package:aurakart/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:aurakart/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:aurakart/common/widgets/texts/section_heading.dart';
 import 'package:aurakart/features/personalization/screens/profile/profile.dart';
+import 'package:aurakart/features/shop/screens/address/address.dart';
 import 'package:aurakart/utils/constants/colors.dart';
 import 'package:aurakart/utils/constants/image_strings.dart';
 import 'package:aurakart/utils/constants/sizes.dart';
@@ -60,7 +61,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.safe_home,
                     title: 'My Addresses',
                     subtitle: "Set shopping delivery address",
-                    onTap: () {},
+                    onTap: () => Get.to(() => const UserAddressScreen()),
                   ),
 
                   ASettingsMenuTile(
