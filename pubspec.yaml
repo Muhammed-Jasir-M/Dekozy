@@ -28,6 +28,7 @@ dependencies:
   # Product Specific
   carousel_slider: ^5.0.0
   readmore: ^3.0.0
+  flutter_rating_bar: ^4.0.1
   
   # Icons
   iconsax: ^0.0.8
@@ -66,6 +67,7 @@ flutter:
     - assets/images/animations/
     - assets/images/products/
     - assets/images/profile/
+    - assets/images/reviews/
 
   
 # --------------- LOCAL FONTS ------------------ #

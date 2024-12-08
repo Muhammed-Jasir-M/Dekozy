@@ -63,6 +63,9 @@ class AImages {
   static const String banner7 = "assets/images/banners/banner_7.jpg";
   static const String banner8 = "assets/images/banners/banner_8.jpg";
 
+  //product revoiews
+  static const String userProfileImage = "assets/reviews/pfp.jpg" ;
+
   // Products
   static const String productImage1 = "assets/images/products/nike-shoes.png";
   static const String productImage2 = "assets/images/products/product-1.png";
