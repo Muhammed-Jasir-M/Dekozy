@@ -14,7 +14,7 @@ class OnBoardingDotNavigation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = OnBoardingController.instance;
-    final dark = AHelperFunctions.isDarkMode(context);
+    final darkMode = AHelperFunctions.isDarkMode(context);
 
     return Positioned(
       bottom: ADeviceUtils.getBottomNavigationBarHeight() + 25,
@@ -24,7 +24,7 @@ class OnBoardingDotNavigation extends StatelessWidget {
         onDotClicked: controller.dotNavigationClick,
         count: 3,
         effect: ExpandingDotsEffect(
-          activeDotColor: dark ? AColors.light : AColors.dark,
+          activeDotColor: darkMode ? AColors.light : AColors.dark,
           dotHeight: 6,
         ),
       ),

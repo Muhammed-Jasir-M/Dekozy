@@ -5,7 +5,8 @@ import 'package:iconsax/iconsax.dart';
 
 class ARatingBarIndictator extends StatelessWidget {
   const ARatingBarIndictator({
-    super.key, required this.rating,
+    super.key,
+    required this.rating,
   });
 
   final double rating;
@@ -13,7 +14,7 @@ class ARatingBarIndictator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RatingBarIndicator(
-      rating:  rating,
+      rating: rating,
       itemSize: 20,
       unratedColor: AColors.grey,
       itemBuilder: (_, __) => const Icon(Iconsax.star1, color: AColors.primary),

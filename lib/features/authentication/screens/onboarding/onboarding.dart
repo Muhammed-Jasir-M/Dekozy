@@ -18,7 +18,7 @@ class OnBoardingScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          // Horizontal Scrollable Pages
+          // Horizontal Scrollable Images
           PageView(
             controller: controller.pageController,
             onPageChanged: controller.updatePageIndicator,

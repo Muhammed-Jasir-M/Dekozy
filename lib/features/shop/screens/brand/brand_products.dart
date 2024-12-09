@@ -1,25 +1,30 @@
 import 'package:aurakart/common/widgets/appbar/appbar.dart';
-import 'package:aurakart/common/widgets/layouts/grid_layout.dart';
-import 'package:aurakart/common/widgets/products/product-cards/product_card_veritcal.dart';
+import 'package:aurakart/common/widgets/brands/brand_card.dart';
 import 'package:aurakart/common/widgets/products/sortable/sortable_products.dart';
 import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
-class AllProducts extends StatelessWidget {
-  const AllProducts({super.key});
+class BrandProducts extends StatelessWidget {
+  const BrandProducts({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
       appBar: AAppBar(
-        title: Text('popular products'),
-        showBackArrow: true,
+        title: Text('Nike'),
       ),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(ASizes.defaultSpace),
-          child: ASortableProducts(),
+          child: Column(
+            children: [
+              /// Brand Detail
+              ABrandCard(showBorder: true),
+              SizedBox(height: ASizes.spaceBtwSections),
+
+              ASortableProducts(),
+            ],
+          ),
         ),
       ),
     );

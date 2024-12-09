@@ -8,8 +8,10 @@ class AddNewAddressscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:
-          const AAppBar(showBackArrow: true, title: Text('add new address')),
+      appBar: const AAppBar(
+        showBackArrow: true,
+        title: Text('add new address'),
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(ASizes.defaultSpace),
@@ -17,60 +19,75 @@ class AddNewAddressscreen extends StatelessWidget {
             child: Column(
               children: [
                 TextFormField(
-                    decoration: const InputDecoration(
-                        prefixIcon: Icon(Iconsax.user), labelText: 'Name')),
+                  decoration: const InputDecoration(
+                    prefixIcon: Icon(Iconsax.user),
+                    labelText: 'Name',
+                  ),
+                ),
                 const SizedBox(height: ASizes.spaceBtwInputFields),
                 TextFormField(
-                    decoration: const InputDecoration(
-                        prefixIcon: Icon(Iconsax.mobile),
-                        labelText: 'Phone number')),
+                  decoration: const InputDecoration(
+                    prefixIcon: Icon(Iconsax.mobile),
+                    labelText: 'Phone number',
+                  ),
+                ),
                 const SizedBox(height: ASizes.spaceBtwInputFields),
                 Row(
                   children: [
                     Expanded(
-                        child: TextFormField(
-                            decoration: const InputDecoration(
-                                prefixIcon: Icon(Iconsax.building_31),
-                                labelText: 'Street'))),
+                      child: TextFormField(
+                        decoration: const InputDecoration(
+                          prefixIcon: Icon(Iconsax.building_31),
+                          labelText: 'Street',
+                        ),
+                      ),
+                    ),
                     const SizedBox(width: ASizes.spaceBtwInputFields),
                     Expanded(
-                        child: TextFormField(
-                            decoration: const InputDecoration(
-                                prefixIcon: Icon(Iconsax.code),
-                                labelText: 'Postal Code'))),
+                      child: TextFormField(
+                        decoration: const InputDecoration(
+                          prefixIcon: Icon(Iconsax.code),
+                          labelText: 'Postal Code',
+                        ),
+                      ),
+                    ),
                   ],
                 ),
-                const SizedBox(
-                  height: ASizes.spaceBtwInputFields,
-                ),
+                const SizedBox(height: ASizes.spaceBtwInputFields),
                 Row(
                   children: [
                     Expanded(
-                        child: TextFormField(
-                            decoration: const InputDecoration(
-                                prefixIcon: Icon(Iconsax.building),
-                                labelText: 'City'))),
+                      child: TextFormField(
+                        decoration: const InputDecoration(
+                          prefixIcon: Icon(Iconsax.building),
+                          labelText: 'City',
+                        ),
+                      ),
+                    ),
                     const SizedBox(width: ASizes.spaceBtwInputFields),
                     Expanded(
-                        child: TextFormField(
-                            decoration: const InputDecoration(
-                                prefixIcon: Icon(Iconsax.activity),
-                                labelText: 'State'))),
+                      child: TextFormField(
+                        decoration: const InputDecoration(
+                            prefixIcon: Icon(Iconsax.activity),
+                            labelText: 'State'),
+                      ),
+                    ),
                   ],
                 ),
-                const SizedBox(
-                  height: ASizes.spaceBtwInputFields,
-                ),
+                const SizedBox(height: ASizes.spaceBtwInputFields),
                 TextFormField(
-                    decoration: const InputDecoration(
-                        prefixIcon: Icon(Iconsax.global),
-                        labelText: 'Country')),
-                const SizedBox(
-                  height: ASizes.defaultSpace,
+                  decoration: const InputDecoration(
+                    prefixIcon: Icon(Iconsax.global),
+                    labelText: 'Country',
+                  ),
                 ),
+                const SizedBox(height: ASizes.defaultSpace),
                 SizedBox(
                   width: double.infinity,
-                  child: ElevatedButton(onPressed: () {}, child: Text('save')),
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: const Text('save'),
+                  ),
                 ),
               ],
             ),

@@ -2,7 +2,6 @@ import 'package:aurakart/utils/constants/colors.dart';
 import 'package:aurakart/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
-
 class ARatingProgressIndicator extends StatelessWidget {
   const ARatingProgressIndicator({
     super.key,
@@ -17,7 +16,9 @@ class ARatingProgressIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Expanded(flex: 1,child: Text(text, style: Theme.of(context).textTheme.bodyMedium)),
+        Expanded(
+            flex: 1,
+            child: Text(text, style: Theme.of(context).textTheme.bodyMedium)),
         Expanded(
           flex: 11,
           child: SizedBox(

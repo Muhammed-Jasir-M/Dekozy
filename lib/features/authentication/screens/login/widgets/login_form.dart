@@ -1,6 +1,7 @@
 import 'package:aurakart/features/authentication/screens/password_configuration/forgot_password.dart';
 import 'package:aurakart/features/authentication/screens/signup/signup.dart';
 import 'package:aurakart/navigation_menu.dart';
+import 'package:aurakart/utils/constants/colors.dart';
 import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:aurakart/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
@@ -14,9 +15,7 @@ class ALoginForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Form(
       child: Padding(
-        padding: const EdgeInsets.symmetric(
-          vertical: ASizes.spaceBtwSections,
-        ),
+        padding: const EdgeInsets.symmetric(vertical: ASizes.spaceBtwSections),
         child: Column(
           children: [
             /// Email
@@ -27,9 +26,7 @@ class ALoginForm extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(
-              height: ASizes.spaceBtwInputFields,
-            ),
+            const SizedBox(height: ASizes.spaceBtwInputFields),
 
             /// Password
             TextFormField(
@@ -40,29 +37,26 @@ class ALoginForm extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(
-              height: ASizes.spaceBtwInputFields / 2,
-            ),
+            const SizedBox(height: ASizes.spaceBtwInputFields / 2),
 
             /// Remembear Me & Forget Password
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 /// Remembear Me
                 Row(
                   children: [
-                    Checkbox(
-                      value: true,
-                      onChanged: (value) {},
-                    ),
-                    const Text(
-                      ATexts.rememberMe,
-                    ),
+                    Checkbox(value: true, onChanged: (value) {}),
+                    const Text(ATexts.rememberMe),
                   ],
                 ),
 
-                /// Forget Password
+                // Forget Password
                 TextButton(
                   onPressed: () => Get.to(() => const ForgetPassword()),
+                  style: TextButton.styleFrom(
+                    foregroundColor: AColors.textSecondary,
+                  ),
                   child: const Text(ATexts.forgetPassword),
                 ),
               ],
@@ -79,19 +73,16 @@ class ALoginForm extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: ASizes.spaceBtwSections),
+            const SizedBox(height: ASizes.spaceBtwItems),
 
             /// Create Account Button
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
                 onPressed: () => Get.to(() => const SignupScreen()),
-                child: const Text(
-                  ATexts.createAccount,
-                ),
+                child: const Text(ATexts.createAccount),
               ),
             ),
-            const SizedBox(height: ASizes.spaceBtwSections),
           ],
         ),
       ),

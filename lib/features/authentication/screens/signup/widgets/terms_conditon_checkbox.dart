@@ -9,45 +9,55 @@ class ATermsConditonCheckbox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = AHelperFunctions.isDarkMode(context);
+    final darkMode = AHelperFunctions.isDarkMode(context);
 
     return Row(
       children: [
+        /// Checkbox
         SizedBox(
           width: 24,
           height: 24,
-          child: Checkbox(
-            value: true,
-            onChanged: (value) {},
-          ),
+          child: Checkbox(value: true, onChanged: (value) {}),
         ),
+
         const SizedBox(width: ASizes.spaceBtwItems),
+
+        // Text
         Expanded(
           child: Text.rich(
             TextSpan(
               children: [
+                // Agree Text
                 TextSpan(
-                  text: ATexts.isAgreeTo,
+                  text: '${ATexts.isAgreeTo} ',
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
+
+                // Privacy Policy Text
                 TextSpan(
                   text: ATexts.privacyPolicy,
                   style: Theme.of(context).textTheme.bodyMedium!.apply(
-                        color: dark ? AColors.white : AColors.primary,
+                        color: darkMode ? AColors.white : AColors.primary,
                         decoration: TextDecoration.underline,
-                        decorationColor: dark ? AColors.white : AColors.primary,
+                        decorationColor:
+                            darkMode ? AColors.white : AColors.primary,
                       ),
                 ),
+
+                // And Text
                 TextSpan(
-                  text: ATexts.and,
+                  text: ' ${ATexts.and} ',
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
+
+                // Terms Text
                 TextSpan(
                   text: ATexts.termsOfUse,
                   style: Theme.of(context).textTheme.bodyMedium!.apply(
-                      color: dark ? AColors.white : AColors.primary,
+                      color: darkMode ? AColors.white : AColors.primary,
                       decoration: TextDecoration.underline,
-                      decorationColor: dark ? AColors.white : AColors.primary),
+                      decorationColor:
+                          darkMode ? AColors.white : AColors.primary),
                 ),
               ],
             ),

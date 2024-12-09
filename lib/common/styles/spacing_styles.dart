@@ -3,7 +3,7 @@ import "package:flutter/material.dart";
 import 'package:aurakart/common/styles/spacing_styles.dart';
 
 class ASpacingStyle {
-  static EdgeInsetsGeometry paddingwithAppBarHeight = const EdgeInsets.only(
+  static const EdgeInsetsGeometry paddingwithAppBarHeight = EdgeInsets.only(
     top: ASizes.appBarHeight,
     left: ASizes.defaultSpace,
     bottom: ASizes.defaultSpace,

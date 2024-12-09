@@ -1,3 +1,4 @@
+import 'package:aurakart/common/widgets/appbar/appbar.dart';
 import 'package:aurakart/common/widgets/login_signup/form_divider.dart';
 import 'package:aurakart/common/widgets/login_signup/social_buttons.dart';
 import 'package:aurakart/features/authentication/screens/signup/widgets/signup_form.dart';
@@ -14,37 +15,40 @@ class SignupScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(ASizes.defaultSpace),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              /// Title
-              Text(
-                ATexts.signupTitle,
-                style: Theme.of(context).textTheme.headlineMedium,
-              ),
-
-              const SizedBox(
-                height: ASizes.spaceBtwSections,
-              ),
-
-              /// Forms
-              const ASignupForm(),
-
-              const SizedBox(height: ASizes.spaceBtwSections),
-
-              /// Divider
-              AFormDivider(dividerText: ATexts.orSignUpWith.capitalize!),
-
-              const SizedBox(height: ASizes.spaceBtwSections),
-
-              /// Social Buttons
-              const ASocialButtons(),
-            ],
+    return SafeArea(
+      child: Scaffold(
+        // Appbar
+        appBar: const AAppBar(showBackArrow: true),
+      
+        // Body
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(ASizes.defaultSpace),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                /// Title
+                Text(
+                  ATexts.signupTitle,
+                  style: Theme.of(context).textTheme.headlineMedium,
+                ),
+      
+                const SizedBox(height: ASizes.spaceBtwSections),
+      
+                /// Form
+                const ASignupForm(),
+      
+                const SizedBox(height: ASizes.spaceBtwSections),
+      
+                /// Divider
+                AFormDivider(dividerText: ATexts.orSignUpWith.capitalize!),
+      
+                const SizedBox(height: ASizes.spaceBtwSections),
+      
+                /// Social Buttons
+                const ASocialButtons(),
+              ],
+            ),
           ),
         ),
       ),

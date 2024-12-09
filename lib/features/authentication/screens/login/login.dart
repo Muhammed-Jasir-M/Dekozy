@@ -1,6 +1,7 @@
 import 'package:aurakart/common/styles/spacing_styles.dart';
 import 'package:aurakart/common/widgets/login_signup/social_buttons.dart';
 import 'package:aurakart/features/authentication/screens/login/widgets/login_form.dart';
+import 'package:aurakart/features/authentication/screens/login/widgets/login_header.dart';
 import 'package:aurakart/features/authentication/screens/password_configuration/forgot_password.dart';
 import 'package:aurakart/features/authentication/screens/signup/signup.dart';
 import 'package:aurakart/common/widgets/login_signup/form_divider.dart';
@@ -19,49 +20,28 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = AHelperFunctions.isDarkMode(context);
-
-    return Scaffold(
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: ASpacingStyle.paddingwithAppBarHeight,
-          child: Column(
-            /// Logo, Title & Sub-Title
-            children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Image(
-                    height: 150,
-                    image: AssetImage(
-                      dark ? AImages.lightAppLogo : AImages.darkAppLogo,
-                    ),
-                  ),
-                  Text(
-                    ATexts.loginTitle,
-                    style: Theme.of(context).textTheme.headlineMedium,
-                  ),
-                  const SizedBox(
-                    height: ASizes.sm,
-                  ),
-                  Text(
-                    ATexts.loginSubTitle,
-                    style: Theme.of(context).textTheme.bodyMedium,
-                  ),
-                ],
-              ),
-
-              /// Form
-              const ALoginForm(),
-
-              /// Divider
-              AFormDivider(dividerText: ATexts.orSignInwith.capitalize!),
-
-              const SizedBox(height: ASizes.spaceBtwSections),
-
-              /// Social Buttons
-              const ASocialButtons(),
-            ],
+    return SafeArea(
+      child: Scaffold(
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: ASpacingStyle.paddingwithAppBarHeight,
+            child: Column(
+              children: [
+                /// Logo, Title & Sub-Title
+                const ALoginHeader(),
+      
+                /// Form
+                const ALoginForm(),
+      
+                /// Divider
+                AFormDivider(dividerText: ATexts.orSignInwith.capitalize!),
+      
+                const SizedBox(height: ASizes.spaceBtwSections),
+      
+                /// Social Buttons
+                const ASocialButtons(),
+              ],
+            ),
           ),
         ),
       ),

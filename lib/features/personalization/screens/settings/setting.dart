@@ -5,6 +5,7 @@ import 'package:aurakart/common/widgets/list_tiles/user_profile_tile.dart';
 import 'package:aurakart/common/widgets/texts/section_heading.dart';
 import 'package:aurakart/features/personalization/screens/profile/profile.dart';
 import 'package:aurakart/features/shop/screens/address/address.dart';
+import 'package:aurakart/features/shop/screens/orders/order.dart';
 import 'package:aurakart/utils/constants/colors.dart';
 import 'package:aurakart/utils/constants/image_strings.dart';
 import 'package:aurakart/utils/constants/sizes.dart';
@@ -75,7 +76,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.bag_tick,
                     title: 'My Orders',
                     subtitle: "In-progress and Completed Orders",
-                    onTap: () {},
+                    onTap: () => Get.to(() => const OrderScreen()),
                   ),
 
                   ASettingsMenuTile(

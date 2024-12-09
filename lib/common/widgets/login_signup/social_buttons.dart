@@ -11,6 +11,7 @@ class ASocialButtons extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        /// Google Sign In Button
         Container(
           decoration: BoxDecoration(
             border: Border.all(color: AColors.grey),
@@ -25,9 +26,10 @@ class ASocialButtons extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(
-          width: ASizes.spaceBtwItems,
-        ),
+
+        const SizedBox(width: ASizes.spaceBtwItems),
+
+        /// Facebook Sign In Button
         Container(
           decoration: BoxDecoration(
             border: Border.all(color: AColors.grey),

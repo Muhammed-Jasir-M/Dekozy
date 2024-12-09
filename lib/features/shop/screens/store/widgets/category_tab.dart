@@ -7,9 +7,7 @@ import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class TCategoryTab extends StatelessWidget {
-  const TCategoryTab({
-    super.key,
-  });
+  const TCategoryTab({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -23,7 +23,7 @@ class ASingleAddress extends StatelessWidget {
           : dark
               ? AColors.darkerGrey
               : AColors.grey,
-      margin: EdgeInsets.only(bottom: ASizes.spaceBtwItems),
+      margin: const EdgeInsets.only(bottom: ASizes.spaceBtwItems),
       child: Stack(
         children: [
           Positioned(

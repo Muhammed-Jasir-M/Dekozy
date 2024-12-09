@@ -15,16 +15,20 @@ class OnBoardingController extends GetxController {
   /// Jump to the specific dot selected page.
   void dotNavigationClick(index) {
     currentPageIndex.value = index;
-    pageController.jumpTo(index);
+    pageController.jumpToPage(index);
   }
 
   /// Update Current Index & jump to next page
   void nextPage() {
     if (currentPageIndex.value == 2) {
-     Get.to(const LoginScreen());
+      Get.to(const LoginScreen());
     } else {
       int page = currentPageIndex.value + 1;
-      pageController.jumpToPage(page);
+      pageController.animateToPage(
+        page,
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeInOut,
+      );
     }
   }
 

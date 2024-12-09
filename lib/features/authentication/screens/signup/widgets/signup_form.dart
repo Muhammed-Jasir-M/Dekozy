@@ -18,6 +18,7 @@ class ASignupForm extends StatelessWidget {
           /// First & Last Name
           Row(
             children: [
+              // First Name
               Expanded(
                 child: TextFormField(
                   expands: false,
@@ -27,9 +28,10 @@ class ASignupForm extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(
-                width: ASizes.spaceBtwInputFields,
-              ),
+
+              const SizedBox(width: ASizes.spaceBtwInputFields),
+
+              // Last Name
               Expanded(
                 child: TextFormField(
                   expands: false,
@@ -64,9 +66,7 @@ class ASignupForm extends StatelessWidget {
             ),
           ),
 
-          const SizedBox(
-            height: ASizes.spaceBtwInputFields,
-          ),
+          const SizedBox(height: ASizes.spaceBtwInputFields),
 
           /// Phone Number
           TextFormField(

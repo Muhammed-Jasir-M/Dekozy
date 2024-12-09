@@ -9,6 +9,7 @@ import 'package:aurakart/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:aurakart/common/widgets/texts/brand_title_text_with_verified_icon.dart';
 import 'package:aurakart/common/widgets/texts/section_heading.dart';
 import 'package:aurakart/common/widgets/brands/brand_card.dart';
+import 'package:aurakart/features/shop/screens/brand/all_brands.dart';
 import 'package:aurakart/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:aurakart/utils/constants/colors.dart';
 import 'package:aurakart/utils/constants/enums.dart';
@@ -16,6 +17,7 @@ import 'package:aurakart/utils/constants/image_strings.dart';
 import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:aurakart/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
@@ -66,7 +68,7 @@ class StoreScreen extends StatelessWidget {
                       /// Featured Brands
                       ASectionHeading(
                         title: 'Featured Brands',
-                        onPressed: () {},
+                        onPressed: () => Get.to(() => const AllBrandsScreen()),
                       ),
 
                       const SizedBox(height: ASizes.spaceBtwItems / 1.5),

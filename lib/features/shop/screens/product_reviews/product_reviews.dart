@@ -8,7 +8,6 @@ import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:aurakart/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 import 'package:aurakart/common/widgets/appbar/appbar.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -18,40 +17,39 @@ class ProductReviewsScreens extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      ///appbar
+      /// Appbar
       appBar: const AAppBar(
-          title: Text('Reviews and Ratings'), showBackArrow: true),
-
-      ///body
-      body:  SingleChildScrollView(
-          child: Padding(
-        padding: const EdgeInsets.all(ASizes.defaultSpace),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-           const Text(
-                "Ratings and Reviews are verified and are from people who use the the same type of devices that you use. "),
-          const SizedBox(height: ASizes.spaceBtwItems),
-
-            ///oevrall product ratings
-           const  AOverallProductRating(),
-            ARatingBarIndictator(rating: 3.5,),
-            Text("12,611", style: Theme.of(context).textTheme.bodySmall),
-            const SizedBox(height: ASizes.spaceBtwSections),
-
-            ///user Reviews list
-            const UserReviewCard(),
-            const UserReviewCard(),
-            const UserReviewCard(),
-            const UserReviewCard(),
-            
-
-          ],
-        ),
+        title: Text('Reviews and Ratings'),
+        showBackArrow: true,
       ),
+
+      /// Body
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(ASizes.defaultSpace),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                "Ratings and Reviews are verified and are from people who use the the same type of devices that you use. ",
+              ),
+              const SizedBox(height: ASizes.spaceBtwItems),
+
+              /// Overall product ratings
+              const AOverallProductRating(),
+              const ARatingBarIndictator(rating: 3.5),
+              Text("12,611", style: Theme.of(context).textTheme.bodySmall),
+              const SizedBox(height: ASizes.spaceBtwSections),
+
+              /// User Reviews list
+              const UserReviewCard(),
+              const UserReviewCard(),
+              const UserReviewCard(),
+              const UserReviewCard(),
+            ],
+          ),
+        ),
       ),
     );
   }
 }
-
-

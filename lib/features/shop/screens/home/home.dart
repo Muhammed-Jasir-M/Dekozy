@@ -6,6 +6,7 @@ import "package:aurakart/common/widgets/layouts/grid_layout.dart";
 import "package:aurakart/common/widgets/products/cart/cart_menu_icon.dart";
 import "package:aurakart/common/widgets/products/product-cards/product_card_veritcal.dart";
 import "package:aurakart/common/widgets/texts/section_heading.dart";
+import "package:aurakart/features/shop/screens/all_products/all_products.dart";
 import "package:aurakart/features/shop/screens/home/widgets/home_appbar.dart";
 import "package:aurakart/features/shop/screens/home/widgets/home_categories.dart";
 import "package:aurakart/features/shop/screens/home/widgets/promo_slider.dart";
@@ -17,6 +18,7 @@ import "package:aurakart/utils/device/device_utility.dart";
 import "package:aurakart/utils/helpers/helper_functions.dart";
 import "package:carousel_slider/carousel_slider.dart";
 import "package:flutter/material.dart";
+import "package:get/get.dart";
 import "package:iconsax/iconsax.dart";
 
 class HomeScreen extends StatelessWidget {
@@ -83,7 +85,7 @@ class HomeScreen extends StatelessWidget {
                   /// Heading
                   ASectionHeading(
                     title: 'Popular Products',
-                    onPressed: () {},
+                    onPressed: () => Get.to(() => const AllProducts()),
                   ),
 
                   const SizedBox(height: ASizes.spaceBtwSections),

@@ -19,20 +19,24 @@ class OnBoardingPage extends StatelessWidget {
       padding: const EdgeInsets.all(ASizes.defaultSpace),
       child: Column(
         children: [
+          // Image
           Lottie.asset(
             image,
             repeat: true,
             width: AHelperFunctions.screenWidth() * 0.9,
             height: AHelperFunctions.screenHeight() * 0.6,
           ),
+
+          // Title
           Text(
             title,
             style: Theme.of(context).textTheme.headlineMedium,
             textAlign: TextAlign.center,
           ),
-          const SizedBox(
-            height: ASizes.spaceBtwItems,
-          ),
+
+          const SizedBox(height: ASizes.spaceBtwItems),
+
+          // Sub-Title
           Text(
             subTitle,
             style: Theme.of(context).textTheme.bodyMedium,

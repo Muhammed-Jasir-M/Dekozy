@@ -1,3 +1,4 @@
+import 'package:aurakart/common/widgets/appbar/appbar.dart';
 import 'package:aurakart/utils/constants/image_strings.dart';
 import 'package:aurakart/utils/constants/sizes.dart';
 import 'package:aurakart/utils/constants/text_strings.dart';
@@ -11,68 +12,72 @@ class ResetPassword extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        actions: [
-          IconButton(
-            onPressed: () => Get.back(),
-            icon: const Icon(CupertinoIcons.clear),
-          ),
-        ],
-      ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(ASizes.defaultSpace),
-          child: Column(
-            children: [
-              /// Image
-              Image(
-                image: const AssetImage(AImages.deleiveredEmailIllustration),
-                width: AHelperFunctions.screenWidth() * 0.6,
-              ),
+    return SafeArea(
+      child: Scaffold(
+        // Appbar
+        appBar: AAppBar(
+          showBackArrow: false,
+          actions: [
+            IconButton(
+              onPressed: () => Get.back(),
+              icon: const Icon(CupertinoIcons.clear),
+            ),
+          ],
+        ),
 
-              const SizedBox(
-                height: ASizes.spaceBtwSections,
-              ),
-
-              Text(
-                ATexts.changeYourPasswordTitle,
-                style: Theme.of(context).textTheme.headlineMedium,
-                textAlign: TextAlign.center,
-              ),
-
-              const SizedBox(height: ASizes.spaceBtwItems),
-
-              Text(
-                ATexts.changeYourPasswordSubTitle,
-                style: Theme.of(context).textTheme.labelMedium,
-                textAlign: TextAlign.center,
-              ),
-
-              const SizedBox(height: ASizes.spaceBtwSections),
-
-              // Buttons
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () {},
-                  child: const Text(ATexts.done),
+        // Body
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(ASizes.defaultSpace),
+            child: Column(
+              children: [
+                /// Image
+                Image(
+                  image: const AssetImage(AImages.deleiveredEmailIllustration),
+                  width: AHelperFunctions.screenWidth() * 0.6,
                 ),
-              ),
 
-              const SizedBox(
-                height: ASizes.spaceBtwItems,
-              ),
+                const SizedBox(height: ASizes.spaceBtwSections),
 
-              SizedBox(
-                width: double.infinity,
-                child: TextButton(
-                  onPressed: () {},
-                  child: const Text(ATexts.resendEmail),
+                /// Title
+                Text(
+                  ATexts.changeYourPasswordTitle,
+                  style: Theme.of(context).textTheme.headlineMedium,
+                  textAlign: TextAlign.center,
                 ),
-              )
-            ],
+
+                const SizedBox(height: ASizes.spaceBtwItems),
+
+                /// Sub-Title
+                Text(
+                  ATexts.changeYourPasswordSubTitle,
+                  style: Theme.of(context).textTheme.labelMedium,
+                  textAlign: TextAlign.center,
+                ),
+
+                const SizedBox(height: ASizes.spaceBtwSections),
+
+                /// Done Button
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: const Text(ATexts.done),
+                  ),
+                ),
+
+                const SizedBox(height: ASizes.spaceBtwItems),
+
+                /// Resend Email Button
+                SizedBox(
+                  width: double.infinity,
+                  child: TextButton(
+                    onPressed: () {},
+                    child: const Text(ATexts.resendEmail),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
