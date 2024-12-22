@@ -4,7 +4,7 @@ class AColors {
   AColors._();
 
   // App Theme Colors
-  static const Color primary = Color(0xFF4b68ff);
+  static const Color primary = Color(0xFFD0BBA8);
   static const Color secondary = Color(0xFFFFE24B);
   static const Color accent = Color(0xFFb0c7ff);
 
@@ -18,7 +18,7 @@ class AColors {
       Color(0xfffad0c4),
     ],
   );
-  
+
   // Text Colors
   static const Color textPrimary = Color(0xFF333333);
   static const Color textSecondary = Color(0xFF6C757D);
