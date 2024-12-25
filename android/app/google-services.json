@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "754427206411",
+    "project_id": "aura-kart",
+    "storage_bucket": "aura-kart.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754427206411:android:a54584b173dd92ce9ae00e",
+        "android_client_info": {
+          "package_name": "com.example.aurakart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754427206411-2gnooaid0n6t7dg8bhgs9telsbap4pne.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aurakart",
+            "certificate_hash": "3b693f25135301fc6146188275ff4bbde3ab14cb"
+          }
+        },
+        {
+          "client_id": "754427206411-4k5br94l1098g004l5bddpqnf87uodh7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBappFRRaCsnVpDjmtq92Si2qZx3NAJSNc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754427206411-4k5br94l1098g004l5bddpqnf87uodh7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "754427206411-9p2prva1d6s3kn57lba2b10t7u061pni.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.aurakart"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
