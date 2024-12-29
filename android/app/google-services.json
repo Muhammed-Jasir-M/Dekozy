@@ -22,7 +22,15 @@
           }
         },
         {
-          "client_id": "754427206411-4k5br94l1098g004l5bddpqnf87uodh7.apps.googleusercontent.com",
+          "client_id": "754427206411-rjud8vpht5c9ra69q6i9etfhbof4ugei.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aurakart",
+            "certificate_hash": "69956a06246c90311ba44cfe0e64296bf6fff054"
+          }
+        },
+        {
+          "client_id": "754427206411-6jof1s52len8u5osn1g572iu7d69hveh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
